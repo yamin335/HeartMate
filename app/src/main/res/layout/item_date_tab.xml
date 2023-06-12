@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:paddingRight="@dimen/_4sdp"
+    android:paddingStart="@dimen/_4sdp"
+    android:paddingTop="@dimen/_4sdp"
+    android:id="@+id/container"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/date_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/right_side_rounded_bg"
+        android:text=""
+        android:gravity="center|center_vertical"
+        android:fontFamily="@font/inter_normal"
+        android:textSize="@dimen/_10ssp"/>
+
+</LinearLayout>

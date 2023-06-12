@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.tovalue.me.customviews.CircularProgressBar
+        android:id="@+id/circularProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cpb_progress="100"
+        app:cpb_background_progressbar_color="#b6bbd8"
+        app:cpb_background_progressbar_width="10dp"
+        app:cpb_progress_direction="to_right"
+        app:cpb_progressbar_color_start="@color/professional_start"
+        app:cpb_progressbar_color_end="@color/professional_end"
+        app:cpb_progressbar_width="20dp"
+        app:cpb_progressbar_color_direction="right_to_left"
+        app:cpb_start_angle="0"/>
+</LinearLayout>

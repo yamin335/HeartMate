@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "937381289595",
+    "project_id": "to-value-me-215af",
+    "storage_bucket": "to-value-me-215af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:937381289595:android:5e0c79d33cc42df8008cde",
+        "android_client_info": {
+          "package_name": "com.tovalue.me"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "937381289595-54tvfiq9e61tfulf62k6i03lav6q3evf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBt98hjD1gI-8AFkixRWzmmefFQN9kQgig"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "937381289595-54tvfiq9e61tfulf62k6i03lav6q3evf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "937381289595-0g94r6ets865o7b9qcvrjil6lamc6um0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tovalue.me"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

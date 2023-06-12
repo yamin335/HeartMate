@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="headerTextAcme" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">@dimen/_24ssp</item>
+        <item name="android:fontFamily">@font/acme_regular</item>
+    </style>
+
+
+    <style name="bodyTextAcme" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">@dimen/_13ssp</item>
+        <item name="android:fontFamily">@font/acme_regular</item>
+    </style>
+
+    <style name="bodyTextBoldAcme" parent="bodyTextAcme">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="headerTextBoldAcme" parent="headerTextAcme">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="headerTextInter" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">@dimen/_24ssp</item>
+        <item name="android:fontFamily">@font/inter_normal</item>
+    </style>
+
+
+    <style name="bodyTextInter" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">@dimen/_13ssp</item>
+        <item name="android:fontFamily">@font/inter_normal</item>
+    </style>
+
+    <style name="bodyTextBoldInter" parent="bodyTextInter">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="headerTextBoldInter" parent="headerTextInter">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/transparent">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/circle_stroke"/>
+            <corners android:radius="@dimen/_5sdp" />
+
+        </shape>
+    </item>
+
+    <!-- make sure the ripple doesn't exceed the bounds -->
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/_5sdp" />
+            <solid android:color="@color/circle_stroke" />
+        </shape>
+    </item>
+</ripple>

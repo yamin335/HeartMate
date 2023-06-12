@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/_15sdp"
+    android:paddingEnd="@dimen/_15sdp"
+    android:paddingTop="@dimen/_5sdp"
+    android:paddingBottom="@dimen/_5sdp"
+    android:background="@color/white"
+    android:orientation="vertical">
+<EditText
+    android:background="@drawable/btn_bg_outline"
+    android:fontFamily="@font/inter_normal"
+    android:hint="@string/email"
+    android:id="@+id/email_et"
+    android:layout_height="@dimen/_40sdp"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:textColor="@color/black"
+    android:textColorHint="@color/black"
+    android:textSize="@dimen/_14ssp" />
+
+</LinearLayout>

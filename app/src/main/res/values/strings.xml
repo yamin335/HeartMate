@@ -1,0 +1,599 @@
+<resources>
+    <string name="app_name">To Value Me</string>
+    <string name="app_tag_line">To Value Me</string>
+    <string name="app_tag">Purpose-Driven Dating Starts Here.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="game_view_content_description">Game View</string>
+
+
+    <!-- Dummy Text -->
+    <string name="dummyName">Denise Beamon</string>
+    <string name="dummyTxt">25 dates &amp; other experiences so far</string>
+    <string name="dummyDate">July 1</string>
+    <string name="dummyDay">1st day </string>
+    <string name="dummyLongTxt">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</string>
+
+    <!-- Auth -->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="invitation_code">Invitation Code</string>
+    <string name="no_account">Don\'t have an account? <b>Register</b></string>
+    <string name="account_exist">Already have an account? <b>Login</b></string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="reset_email">Reset Password</string>
+    <string name="reset_email_confirmation">Please check your email after submitting the email address.</string>
+    <string name="invite">Have an invite text?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="create_account">Create Account</string>
+    <string name="account_terms">By tapping “Continue”, you agree to our Terms of Service. Learn how we process your data in our \nPrivacy Policy and Cookies Policy.</string>
+    <string name="phone_number">What’s your phone number?</string>
+    <string name="phone_content">“To Value Me” will send you a text with a verification code. Message and data rates may apply.</string>
+    <string name="phone_warning">What if my number changes?</string>
+    <string name="phone_entry">Your mobile number</string>
+    <string name="phone_valid_number">Enter valid number</string>
+    <string name="phone_verification">Enter your verification code</string>
+    <string name="phone_no_code">Didn\'t get a code?</string>
+    <string name="phonce_edit">Edit</string>
+    <string name="phone_send_to">send to</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="upload_photo">Upload Profile Picture</string>
+    <string name="vision_board">My Vision Board</string>
+    <string name="date_night_catalog">My Date Night Catalog</string>
+    <string name="life_rhythm">The Rhythm of My Life</string>
+    <string name="check_it_out">Check it out</string>
+    <string name="upload">Upload</string>
+    <string name="level_one_invitation_code">Enter your invitation code</string>
+    <string name="submit">Submit</string>
+    <string name="continue_with_phone_number">Continue with phone number</string>
+    <string name="experience">Experiences</string>
+    <string name="experience_sub_title">I invite you to invest in 133 Experiences to ensure I feel seen &amp; heard by you.</string>
+    <string name="experience_detail">To keep things interesting, think of our dating journey as a mutual scavenger hunt.</string>
+    <string name="experience_dating_partner">Level 1 - Be My Dating Partner</string>
+    <string name="level_two_invitation_quote">I am ready to grow from random ‘meet &amp; greets’ to a consistent dating journey</string>
+    <string name="non_exclusive_partner_tv">Let’s become Non-Exclusive Dating Partners</string>
+    <string name="complete_level_one">To Complete Level 1</string>
+    <string name="complete_level_two">To Complete Level 2</string>
+    <string name="complete_level_detail">\u2022 Share our Value Inventories \n\u2022 Curate Dates &amp; Other Experiences To Observe Our Answers \n\u2022 Share Our Observations</string>
+    <string name="accept_invitation">Accept My Invitation</string>
+    <string name="decline_invitation">Decline</string>
+
+    <string name="primer_title">There is a lot to you.</string>
+    <string name="primer_sub_title">Let’s find out exactly how much.</string>
+    <string name="primer_basic_info">Enter basic information</string>
+    <string name="primer_one_name_title">What’s your name?</string>
+    <string name="primer_one_first_name">First name</string>
+    <string name="primer_one_last_name">Last name</string>
+    <string name="primer_one_email">What’s your email?</string>
+    <string name="primer_one_email_terms">I do not wish to receive marketing communications about “To Value Me” products and services.</string>
+    <string name="primer_one_password_title">Set a password</string>
+    <string name="primer_one_password">password</string>
+    <string name="primer_one_confirm_password">Confirm Password</string>
+    <string name="primer_one_birthday_title">What’s your date of birth?</string>
+    <string name="primer_one_birthday_age">Age</string>
+    <string name="primer_one_age_confirm">Please confirm your info</string>
+    <string name="primer_one_age_alert">This can’t be changed later</string>
+    <string name="primer_one_notification_title">Always know what your dating partners know.</string>
+    <string name="primer_one_notification_enable">Enable Notifications</string>
+    <string name="primer_one_notification_disable">Disable Notifications</string>
+    <string name="primer_one_years_old">years old</string>
+
+    <string name="primer_two_title">Your dating journey begins with you.</string>
+    <string name="primer_two_preferences">Add details and preferences</string>
+    <string name="primer_two_upload_photo">Upload your profile photo</string>
+    <string name="primer_two_photo_condition">1 image is required</string>
+    <string name="primer_two_photo_title">Upload Image</string>
+    <string name="primer_two_location">Where do you live?</string>
+
+    <string name="primer_iii_title"><b>Level 1</b>\nInvite your matches to a guided journey of mutual  discovery.</string>
+    <string name="primer_iii_sub_title">Level 1 is a commitment to deciding if the next level is worth it or not.</string>
+    <string name="primer_iii_inventory">Take inventory of your life</string>
+    <string name="primer_iii_tag">Does this mean my match and I are dating?</string>
+    <string name="aesthetic_inventory_side_title">How much is there to my Aesthetic Side?</string>
+    <string name="spiritual_inventory_side_title">How much is there to my Spiritual Side?</string>
+    <string name="entertainment_inventory_side_title">How much is there to my Entertainment Side?</string>
+    <string name="seual_inventory_side_title">How much is there to my Sexual Side?</string>
+    <string name="emotional_inventory_side_title">How much is there to my Emotional Side?</string>
+    <string name="intellect_inventory_side_title">How much is there to my Intellectual Side?</string>
+    <string name="professional_inventory_side_title">How much is there to my Professional Side?</string>
+    <string name="village_inventory_side_title">How much is there to my Village Side?</string>
+    <string name="inventory_side">Sides</string>
+    <string name="inventory_continue">Continue</string>
+    <string name="inventory_what_means">What does it all mean?</string>
+    <string name="inventory_update">Update Inventory of My Life</string>
+    <string name="inventory_life_title">Inventory of My Life</string>
+    <string name="inventory_life_sub_title">Click the button below for the side of yourself that you’d like to update</string>
+    <string name="inventory_what_important">Why is this important?</string>
+    <string name="back">Back</string>
+
+    <string name="primer_two_availability_title">What’s your availability to go out on dates?</string>
+    <string name="primer_two_availability_subtitle">Check the days of the week that you are available on average</string>
+    <string name="primer_two_availability_monday">Monday</string>
+    <string name="primer_two_availability_tuesday">Tuesday</string>
+    <string name="primer_two_availability_wednesday">Wednesday</string>
+    <string name="primer_two_availability_thursday">Thursday</string>
+    <string name="primer_two_availability_friday">Friday</string>
+    <string name="primer_two_availability_saturday">Saturday</string>
+    <string name="primer_two_availability_sunday">Sunday</string>
+    <string name="primer_two_availability_all">I’m available 7 days-a-week</string>
+
+    <string name="primer_four_title">Understanding the Possibilities</string>
+    <string name="primer_four_review_my_value">Review My Value</string>
+    <string name="primer_four_app_tag">Welcome to Purpose-Driven Dating</string>
+    <string name="primer_four_sub_title">52 Weeks in a year. \n\n104 dates &amp; other experiences are available if you are willing to see your dating partner 2 times a week.\n\n365 experiences per year await you and your potential marriage partner.</string>
+    <string name="primer_four_tvu_title">There’s a lot to Aliya, you have over</string>
+    <string name="primer_four_review">Review Dating Quickstart Guide</string>
+    <string name="primer_four_personality_sub_title">Your <b>Village</b> is where your heart it !\n\nGoing out &amp; experiencing the <b>Entertainment</b> of the world is next!\n\n<b>Aesthetically,</b>  you have a lot of flare you’d like you partner to take notice of!</string>
+    <string name="primer_four_understand_personality">Understanding You Personality</string>
+    <string name="primer_four_personality_facet">Total Personality Facets</string>
+    <string name="primer_four_guide_text">experiences are needed for you to feel seen &amp; heard </string>
+    <string name="primer_four_guide">Review the recommendations for your dating partners to explore your life</string>
+    <string name="guide_tab_investment">Date Nights Ideas</string>
+    <string name="guide_tab_possibility">Possibilities</string>
+
+    <string name="primer_v_invitation_title">Congratulations!</string>
+    <string name="primer_v_invitation_sub_title">Self-check before you start your dating journey:</string>
+    <string name="primer_v_send_invitation">Send Invitation</string>
+    <string name="primer_v_invitation_headline">Regarding your last few conversations</string>
+    <string name="primer_v_point_i"><b>Exploring a match</b>\n...still figuring things out</string>
+    <string name="primer_v_point_ii"><b>Starting a dating journey</b>\n...learning our story together</string>
+    <string name="primer_v_point_iii"><b>Committed Couple</b>\n...marrying our lives together</string>
+    <string name="primer_v_share">Share To Phone</string>
+    <string name="primer_v_email_phone">Phone Number</string>
+    <string name="primer_v_score_title">Select the completion value your dating partner must reach before you are ready to commit to: </string>
+    <string name="primer_v_level_2">Level 2 -  Exclusive Couple </string>
+    <string name="primer_v_start_journey">I’m ready to start a dating journey</string>
+    <string name="primer_v_learn_more">Not Yet, Learn More</string>
+    <string name="primer_v_tvm_goals">Continue</string>
+    <string name="primer_v_tvm_effort">you’re worth it.</string>
+    <string name="primer_v_tvm_sub_title">meet and greets, dates, and other experiences are requested to know me - intentionally.</string>
+    <string name="primer_v_tvm_title">To Value Aliya</string>
+    <string name="primer_v_title">Your Dating Partners now have XXX to set the scene and setting to learn the story behind your Life Inventory</string>
+    <string name="primer_v_sub_title">To Value Me I Need</string>
+    <string-array name="guide_tab">
+        <item>@string/guide_tab_investment</item>
+        <item>@string/guide_tab_possibility</item>
+    </string-array>
+
+    <string name="primer_x_title">Your story behind the numbers</string>
+    <string name="primer_x_sub_title">It is now my dating partners goal to curate dates, interactions, and experiences to learn the story behind my numbers</string>
+
+    <string name="primer_vi_title">Progress is made by paying attention to one another.</string>
+
+
+    <string name="primer_viii_title">Are You Ready?</string>
+    <string name="primer_viii_invitation_sub_title">Self-check before you start your \n<b>To Value Me journey:</b></string>
+    <string name="primer_viii_point_i">Did I Feel Comfortable?</string>
+    <string name="primer_viii_point_ii">They were not hijacking the conversation from me?</string>
+    <string name="primer_viii_point_iii">They were adding value to the conversation(s) and not just waiting for their turn to speak when I shared?</string>
+    <string name="primer_viii_send_invitation">Yes, I Have Someone in Mind!</string>
+
+    <!-- Bottom Nav -->
+    <string name="nav_profile">Profile</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_notification">Notifications</string>
+    <string name="nav_fav">Favorite</string>
+    <string name="nav_setting">Setting</string>
+
+    <!-- Profile -->
+    <string name="profile_bingo_card_inventory">To Value Me Inventory</string>
+    <string name="profile_dating_preferences">Dating Preferences</string>
+    <string name="profile_setting">Settings</string>
+    <string name="profile_what_works">What Works</string>
+    <string name="profile_help_center">Help Center</string>
+    <string name="profile_learn_more">Learn More</string>
+    <string name="save_title">Save</string>
+    <string name="display_name">Display Name</string>
+    <string name="profile_prefer_note">Preferred Members explore more dating partners</string>
+    <string name="profile_bingo_member">To Value Me Member</string>
+
+    <!-- Setting -->
+    <string name="setting_title">Setting</string>
+    <string name="setting_phone_email">Phone &amp; Email</string>
+    <string name="setting_notification_title">Notification</string>
+    <string name="setting_push_notification">Push Notifications</string>
+    <string name="setting_emails">Emails</string>
+    <string name="setting_membership">Membership</string>
+    <string name="setting_upgrade_membership">Upgrade to Preferred Membership</string>
+    <string name="setting_legal">Legal</string>
+    <string name="setting_privacy_policy">Privacy Policy</string>
+    <string name="setting_terms_service">Terms of Service</string>
+    <string name="setting_licenses">Licenses</string>
+    <string name="setting_community">Community</string>
+    <string name="setting_safe_tips">Safe Dating Tips</string>
+    <string name="setting_membership_principle">Member Principles</string>
+    <string name="setting_logout">Log Out</string>
+    <string name="setting_delete_account">Delete Account</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="date_number">Date Number</string>
+    <string name="alert">Alert!</string>
+    <string name="confirm_account_delete">Are you sure, to deactivate your account permanently?</string>
+
+    <!-- Push Notification -->
+    <string name="push_notification">Push Notifications</string>
+    <string name="email_title">All Emails</string>
+    <string name="push_all_notification">All Notifications</string>
+    <string name="push_new_discovery">New Discoveries</string>
+    <string name="push_new_invitation">New Invitations</string>
+    <string name="daily_mood_ring">Daily Mood Ring</string>
+    <string name="push_promotion">Promotions</string>
+    <string name="push_exclusive_offers_news">Exclusive Offers and News</string>
+    <string name="push_announcement">Announcements</string>
+    <string name="push_announcement_sub_title">What\'s new with To Value Me</string>
+
+    <string name="storage_access_permission">Storage access permission.</string>
+    <string name="storage_msg">Storage access permission is need to access photos.</string>
+    <string name="storage_enable_permission">Enable permission on App Settings.</string>
+
+    <string name="location_access_permission">Location permission.</string>
+    <string name="location_msg">Location permission is needed.</string>
+    <string name="location_enable_permission">Enable Location permission on App Settings.</string>
+
+    <!-- Membership -->
+    <string name="membership_billing_title">Recurring billing, cancel anytime.</string>
+    <string name="membership_billing_note">By tapping Subscribe, your payment will be charged to your
+        Google Play account, and your subscription will automatically
+        renew for the same package length at the same price until
+        you cancel in settings in the Google Play store. By tapping
+        Subscribe you agree to our Terms</string>
+    <string name="membership_month">month</string>
+    <string name="membership_months">months</string>
+    <string name="membership_recommended">Recommended</string>
+    <string name="membershipTitle">Preferred Members can explore more dating partners</string>
+    <string name="membership_subscribed">Already Subscribed</string>
+    <string name="membership_failed">Error while fetching Billing Data.</string>
+    <string name="membership_purchase_success_msg">Subscription Purchased Successfully.</string>
+    <string name="membership_base_plan">$59.99</string>
+    <string name="membership_plus_plan"><b>@</b> $44.99/mo</string>
+    <string name="membership_quarter_plan"><b>@</b> $35.99/mo</string>
+    <string name="membership_yearly_plan"><b>@</b> $24.99/mo</string>
+
+    <string name="level_2_membership_base_plan">$34.99</string>
+    <string name="level_2_membership_three_month_plan">$64.99 @21.66/mo</string>
+    <string name="level_2_membership_six_month_plan">$99.99 @16.66/mo</string>
+
+
+    <string name="level_3_membership_base_plan">$65.90</string>
+    <string name="level_3_membership_three_month_plan">$134.97 @44.99/mo</string>
+    <string name="level_3_membership_six_month_plan"> $215.99 @35.99/mo</string>
+
+    <!--  Dating Preferences -->
+    <string name="filter_preferences_title">Dating Preferences</string>
+    <string name="filter_progress_title">Progress Preferences</string>
+    <string name="filter_level_one">Level 1 - Dating Partner Minimum Score</string>
+    <string name="filter_level_two">Level 2 - Dating Partner Minimum Score</string>
+    <string name="level_progress">Progress : </string>
+    <string name="allow_notifications">Allow Notifications</string>
+    <string name="allow_emails">Allow Emails</string>
+    <string name="filter_experience_title">Experience Preferences</string>
+    <string name="filter_my_location">My Home Location</string>
+    <string name="filter_max_distance">Max Distance for Premium Experiences</string>
+    <string name="filter_history">History</string>
+    <string name="filter_review">Review</string>
+
+    <!-- notification -->
+    <string name="default_notification_channel_id">fcm_default_channel</string>
+
+    <!--  home Screen strings   -->
+    <string name="homeScreenTitle">My Active Dating Journeys</string>
+    <string name="discoveries">Discoveries</string>
+    <string name="me">Me</string>
+    <string name="denise">Denise</string>
+
+
+    <!-- up grade to level fragment -->
+    <string name="levelInvitationSubHeading">
+        Share your responses to the following questions with <![CDATA[
+ <b>%s</b>
+    ]]> along with your <![CDATA[
+ <b>%s invitation</b>
+    ]]>:</string>
+
+    <string name="levelInvitationQuestionHeading">Regarding your experience so far</string>
+
+    <string name="levelInvitationQ1"> What do you look for to know when
+        <![CDATA[
+ <b>%s</b>
+    ]]>
+     is uncomfortable?</string>
+
+    <string name="levelInvitationQ2"> Share a few actions you’ve learned
+    to use to bring <![CDATA[
+ <b>%s</b>
+    ]]> back from
+    discomfort to balance &amp; serenity?</string>
+
+    <string name="levelInvitationQ3">Is <![CDATA[
+ <b>%s</b>
+    ]]> capable of hiding their discomfort from you; if so share a few ways you’ve learned to make
+    <![CDATA[
+ <b>%s</b>
+    ]]> feel safe enough to share.
+    </string>
+
+    <string name="congratulations">Congratulations!</string>
+    <string name="nextStep">I\’m ready, to take the next step</string>
+
+
+    <!-- Exit Dating Journey Dialog -->
+    <string name="exitDatingJourneyDialogTitle">Share your reason for exiting this dating journey</string>
+    <string name="noReason">No Reason</string>
+    <string name="iMNoLongerInterested">I\’m no longer interested</string>
+    <string name="inappropriateBehavior">Inappropriate behavior</string>
+    <string name="youAreNotReadyForThisJourney">You are not ready for this journey</string>
+    <string name="noReciprocity">No reciprocity</string>
+
+
+    <!-- Dating journey card String  -->
+    <string name="toValueMe">%s  To Value Me</string>
+
+    <!-- Level1 invitation -->
+
+    <!-- Date Night Catalog -->
+    <string name="guide_me">Guide Me</string>
+    <string name="date_nightCatalog">Date Night Catalog</string>
+
+    <!-- Date night Catalog idea fragment -->
+    <string name="toolBarTitle">%S Date Ideas</string>
+    <string name="dataNightCatalogIdeaFragmentHeading">Learn the story behind %S’s numbers</string>
+    <string name="shuffle">Shuffle</string>
+    <string name="upgradeToPremium">Upgrade To Premium</string>
+    <string name="thisWeekIdeas">This week\'s ideas</string>
+    <string name="promoted">Promoted</string>
+    <string name="see_all">See All</string>
+    <string name="route">Route</string>
+    <string name="aspectsOfMe">%S aspects of me</string>
+
+
+    <!-- Date night catalog idea Detail Fragment -->
+    <string name="roadTrip">Road Trip</string>
+    <string name="sendDateNightOffer">Send Date Night Offer</string>
+    <string name="theSetting">The Setting</string>
+    <string name="theExperience">The Experience</string>
+    <string name="thePossibilities">The Possibilities</string>
+
+
+    <!-- Date night Catalog Offer Dialog -->
+    <string name="howAboutYouAndMe">How about you &amp; me</string>
+    <string name="uploadEventImage">Upload Event Image*</string>
+    <string name="send">SEND</string>
+    <string name="details">Details*</string>
+
+
+    <!-- Dating Journey Home Fragment -->
+    <string name="ourDatingJourney">Our Dating Journey</string>
+    <string name="nonExclusiveDatingPartners">Non-Exclusive Dating Partners</string>
+    <string name="learningTheStoryBehindOurNumbers">Learning the story behind our numbers</string>
+    <string name="updateOurDatingJournal">Update Our Dating Journal</string>
+    <string name="ourCalender">Our Calendar</string>
+    <string name="createADateNightOffer">Create a Date Night Offer</string>
+    <!-- Dating Journey Home Fragment Tab and Viewpager-->
+    <string name="dating_tab_dates">Dates</string>
+    <string name="dating_tab_observations">Observations</string>
+
+    <string-array name="datingGuide_tab">
+        <item>@string/dating_tab_dates</item>
+        <item>@string/dating_tab_observations</item>
+    </string-array>
+
+
+    <!-- dating partner observations fragment -->
+    <string name="clueDiscovered">%s / %s clues discovered</string>
+
+
+    <!-- Dating partner date fragment -->
+    <string name="you"><b>%s</b>You</string>
+    <string name="other"><b>%s</b></string>
+    <string name="upcoming_plans">Upcoming Plans</string>
+    <string name="offer">Offer</string>
+    <string name="done">Done</string>
+    <string name="unavailable_block_scheduler">Unavailable Block Scheduler</string>
+    <string name="title_tv">Title*</string>
+    <string name="start_time">Start Time*</string>
+    <string name="end_time">End Time*</string>
+    <string name="note">Note</string>
+    <string name="description_unavailable">This will show you as unavailable for Date Nights in all of your dating partner\'s calendars.</string>
+    <string name="search">Search</string>
+    <string name="enter_start_time">Enter Start Time</string>
+    <string name="enter_end_time">Enter End Time</string>
+    <string name="enter_title">Enter Title</string>
+
+
+    <string name="start_time_detail">Start Time</string>
+    <string name="end_time_detail">End Time</string>
+
+
+    <!-- Year Months -->
+    <string-array name="year_list">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+
+    <!--Notification-->
+    <string name="no_new_notification">No New Notifications</string>
+    <string name="read">Read</string>
+    <string name="unread">Unread</string>
+
+    <!-- Great Job -->
+    <string name="great_job_title">You invest a fair bit of your time in entertainment</string>
+    <string name="great_job_sub_title">Tap <b>continue</b> to see how your spectrum of life has evolved</string>
+
+    <!--Billing Dialog -->
+    <string name="dating_dialog_title">Purpose-Driven dating begins when you share</string>
+    <string name="date_night_concierge">Date Night Concierge</string>
+    <string name="date_night_concierge_price">$9.99 per month</string>
+    <string name="relationshipGoals">Relationship Goalsal asldfjklasjdf;ljasd;lfjalsdfjlasjdfsdfgsdfgsdfgsfdg</string>
+    <string name="relationshipGoals_price">$19.99 ($3.99 each)</string>
+
+
+
+    <string name="all">All</string>
+    <string name="notification_drawer_title">View Notifications by Type</string>
+    <string name="notification_type_1">Date Night Offers</string>
+    <string name="notification_type_2">Exclusive Commitment Offers</string>
+    <string name="notification_type_3">Upcoming Plans</string>
+    <string name="notification_type_4">Dating Journal Entries</string>
+    <string name="notification_type_5">Daily Statuses</string>
+    <string name="notification_type_6">Commitment Goals</string>
+    <string name="notification_type_7">FYIs</string>
+    <string name="notification_type_8"><![CDATA[Promotions & ExclusiveOffers]]></string>
+    <string name="update_notification_settings">Update Notification Settings</string>
+    <string name="open_drawer">Open</string>
+    <string name="close_drawer">Close</string>
+    <string name="clear">clear</string>
+
+    <string name="our_current_goal">Our Current Goal</string>
+
+    <!--Profile-->
+    <string name="update_my_profile">Update my profile</string>
+    <string name="update_my_email">Update Your Email</string>
+    <string name="what_works">What Works</string>
+    <string name="icebreakers_for_new_matches">Icebreakers for New Matches</string>
+    <string name="the_rhythm_of_my_life">The Rhythm of My Life</string>
+    <string name="no_upcoming_plans">No Upcoming Plans</string>
+    <string name="start_dating_journey_text">Start My First Dating Journey</string>
+    <string name="continue_btn">Continue</string>
+    <string name="my_mood_ring">My Mood Ring</string>
+    <string name="share">Share</string>
+    <string name="save">Save</string>
+    <string name="view">View</string>
+    <string name="week_ending_june_15"><![CDATA[< Week ending]]></string>
+    <string name="capture_and_share">Capture and share your daily mood and pay attention to how your partner shows up for you</string>
+    <string name="today_i_m_feeling">Today I\'m feeling...</string>
+    <string name="mood_ring_for">Mood Ring for</string>
+    <string name="inventory">Inventory</string>
+    <string name="expert_dating_guides_to_help_you_along_your_nto_value_me_journey">Expert dating guides to help you along your\nTo Value Me Journey</string>
+    <string name="was_this_helpful">Was this helpful?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="location">Location</string>
+    <string name="our_plan">Our Plan</string>
+    <string name="reschedule">Reschedule</string>
+    <string name="accept">Accept</string>
+    <string name="destination">Destination*</string>
+    <string name="url">Url</string>
+    <string name="reason_for_canceling">Share your reason for canceling this experience</string>
+    <string name="update_btn">Update</string>
+    <string name="update_dating_availability">Update Dating Availability</string>
+    <string name="exit">Exit</string>
+    <string name="update_successfully">Update successfully!</string>
+    <string name="title_activity_level_two_invitation">LevelTwoInvitationActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="do_you_accept">Do You Accept?</string>
+
+
+    <string name="string_with_pint">\u2022  %1$s</string>
+    <string name="take_to_next_step">I\'m ready, to take the next step</string>
+    <string name="created_by">Created By</string>
+
+    <!-- Field Error -->
+    <string name="destination_error">Destination required*</string>
+    <string name="startTimeError">Start time required*</string>
+    <string name="endTimeError">End time required*</string>
+    <string name="detailError">Detail required*</string>
+    <string name="uploadEventImageError">Upload event image required*</string>
+
+    <string name="the_setting_default_text">Taking a road trip allows you to get off the beaten path and see actual communities and natural wonders.</string>
+    <string name="delete">Delete</string>
+    <string name="manage_existing_invitations">Manage Existing Invitations</string>
+    <string name="manage_existing_invitation">Manage Existing Invitation</string>
+    <string name="phone">Phone</string>
+    <string name="days_pending">Days \n Pending</string>
+    <string name="action">Action</string>
+    <string name="no_invitation_pending">No Invitation \n Pending</string>
+    <string name="filter">Filter</string>
+    <string name="update_my_mood_ring">Update My Mood Ring</string>
+    <string name="see_who_shows_up_for_you_today">See who shows\nup for you today</string>
+    <string name="title_membership">Recurring billing, cancel anytime.</string>
+    <string name="description_membership">By tapping Subscribe, your payment will be charged to your  Google Play account, and your subscription will automatically renew for the same package length at the same price until you cancel in settings in the Google Play store. By tapping  Subscribe you agree to our Terms</string>
+    <string name="membership_message">Access to  the tools for guided dating journeys and going to the next level - marrying two lives into one.</string>
+    <string name="cancel_subscription">cancel Subscription</string>
+    <string name="plan_info_title_for_plan2">Level 2 - Dating Journey Experience</string>
+    <string name="plan_info_title_for_plan3">Level 3 - Dating Journey Experience</string>
+    <string name="plan_info_sub_title"><![CDATA[Access to the tools for guided dating journeys & going to the next level by  marrying two lives into one.]]></string>
+    <string name="plan_subscribed_on">Subscribed Date</string>
+    <string name="current_subscription">Current Subscription</string>
+    <string name="manage_my_membership">Manage My Membership</string>
+    <string name="downgrade">Downgrade</string>
+    <string name="upgrade">Upgrade</string>
+
+    <string name="about_the_last_meet_amp_greet"><![CDATA[About the last Meet&Greet]]></string>
+    <string name="primer_v_experience_headline">Regarding our experience so far</string>
+    <string name="primer_v_share_my_testimoial">Share My Testiminial</string>
+    <string name="view_history">View History</string>
+    <string name="meet_greet_condition">I’m ready to take things to the next level, send xxxxx an invitation to start a Dating Journey!</string>
+    <string name="primer_v_meet_greet_sub_title">"Share your responses to the following questions with xxxxx  "</string>
+    <string name="meet_greet_history_title">"Meet and Greet\nTestimonial History "</string>
+    <string name="meet_greet_history_subtitle">Review the history of your testimonials with xxxxx below</string>
+
+    <string name="vision_partner_board">View My Partner Board</string>
+    <string name="vision_board_tag_line">My \nPartner \nVision \nBoard</string>
+    <string name="vision_mindset">My Mindset</string>
+    <string name="vision_undecided">Undecided</string>
+    <string name="mindset_title">Which identifies you best, currently?</string>
+    <string name="mindset_sub_title">Life would be so much easier if I could …</string>
+    <string name="board_validation_title">Wait, first your must</string>
+    <string name="tap">Tap</string>
+    <string name="mindset_tab">My Mindset Tab</string>
+    <string name="adult_tab">My Adulting Season</string>
+    <string name="bliss_tab">My Season of Bliss</string>
+    <string name="date_tab">My Dating Style</string>
+    <string name="board_start_progress">To Get Started</string>
+    <string name="required_tabs">All of the following tabs</string>
+    <string name="fill_missing_tabs">\u2022 My Mindset \n\u2022 My Adulting Season \n\u2022 My Season of Bliss</string>
+    <string name="board_dialog_alert">are required to be submitted before viewing your Partner Vision Board</string>
+    <string name="adult_season_primary_title"><b>Select current primary season</b> - spending 80% of your money, time, focus, &amp; energy on</string>
+    <string name="adult_season_secondary_title"><b>Select secondary season</b> - spending 20% of your money, time, focus, &amp; energy on</string>
+    <string name="adult_tab_title">“Every one of us are already in an adulting season of life…“</string>
+    <string name="adult_tab_sub_title">Here are the 6 adulting seasons</string>
+    <string name="bliss_tab_title">Which of the adulting seasons could you spend 18 years of your life maintaining and reaching for new heights of excellence within?</string>
+    <string name="date_tab_title">Purpose-driven dating is transforming a stranger into a beloved family member</string>
+    <string name="date_tab_sub_title">Organize the tiles below to match the stages you find comfort and connection in dating…</string>
+    <string name="description">see description</string>
+    <string name="present">Presenting your</string>
+    <string name="partner_vision_board">Partner Vision Board</string>
+    <string name="ice_breakers">Use My Ice Breakers</string>
+    <string name="partner_mindset">Your Partner\'s Mindset</string>
+    <string name="partner_bliss_season">Your Season Of Bliss</string>
+    <string name="partner_bliss_season_title">you look forward to and are currently working towards spending 18 years of your life</string>
+    <string name="partner_recognize">Recognizing Your Person</string>
+    <string name="dating_momentum">Dating Momentum</string>
+    <string name="be_aware">Be Aware</string>
+    <string name="stay_course">Stay The Course</string>
+    <string name="ice_breaker_sub_title">Determine if your “dating matches” are of the right mindset and share your "season of bliss" goals</string>
+    <string name="adult_dialog_title">Adulting Season of</string>
+    <string name="adult_dialog_btn">Currently, my primary adulting season</string>
+    <string name="copy">Copy</string>
+
+    <string name="week_1">Week 1</string>
+    <string name="meet_and_great_ideas">Meet and Greet Ideas</string>
+    <string name="at">At</string>
+    <string name="level_2">LEVEL 2</string>
+    <string name="notYet">Not Yet</string>
+</resources>

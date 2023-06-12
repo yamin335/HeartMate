@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools">
+<LinearLayout
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_45sdp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/_14sdp"
+    android:paddingEnd="@dimen/_14sdp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        app:srcCompat="@drawable/back_icon" />
+</LinearLayout>
+
+<ImageView
+    android:id="@+id/loveImage"
+    android:layout_width="@dimen/_170sdp"
+    android:layout_height="wrap_content"
+    android:adjustViewBounds="true"
+    android:layout_marginStart="@dimen/_4sdp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+    app:srcCompat="@drawable/heart_balloon" />
+
+<TextView
+    android:id="@+id/firstName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_16sdp"
+    android:layout_weight="1"
+    android:layout_marginStart="@dimen/_100sdp"
+    android:fontFamily="@font/acme_regular"
+    android:text="First Name"
+    android:textColor="@color/black"
+    android:textSize="@dimen/_20ssp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+<TextView
+    android:id="@+id/tag"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:fontFamily="@font/acme_regular"
+    android:text="Relationship Goals"
+    android:textColor="@color/black"
+    android:textSize="@dimen/_20ssp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="@+id/firstName"
+    app:layout_constraintTop_toBottomOf="@+id/firstName" />
+
+<TextView
+    android:id="@+id/description"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:fontFamily="@font/inter_medium"
+    android:text="Relationship Goals are for single -use. Once you assign to a match, dating partner or committed couple you cannot reverse the assignment."
+    android:textColor="@color/dark_gray_profile"
+    android:textSize="@dimen/_9ssp"
+    android:layout_marginStart="@dimen/_32sdp"
+    android:layout_marginEnd="@dimen/_32sdp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/loveImage" />
+
+<View
+    android:id="@+id/line_separator_1"
+    android:layout_width="0dp"
+    android:layout_height="1dp"
+    app:layout_constraintTop_toBottomOf="@id/description"
+    android:layout_marginTop="14dp"
+    android:layout_marginHorizontal="22dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:background="@color/line_gray"/>
+
+<LinearLayout
+    android:id="@+id/linear1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="26dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/line_separator_1"
+    app:layout_constraintVertical_bias="0.0">
+
+    <TextView
+        android:id="@+id/goalNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/inter_light"
+        android:text="1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_30ssp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="24dp">
+        <TextView
+            android:id="@+id/goalTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/inter_normal"
+            android:text="Memorable Birthday Night"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line_separator_1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/goalDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/inter_light"
+            android:text="Step-by-step plan to create an experience that\nweaves the story of who you are to each other \ninto a night to be rememeberd. \n\n6 week head start."
+            android:textColor="@color/placeholderColor1"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/line_separator_1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_light"
+                    android:text="Assigned To:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11ssp"/>
+
+                <TextView
+                    android:id="@+id/assignTo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/inter_bold"
+                    tools:text="No One Yet"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11ssp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_light"
+                    android:text="Deadline:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11ssp"/>
+
+                <TextView
+                    android:id="@+id/deadline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/inter_bold"
+                    tools:text="No Deadline Set"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_11ssp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
+<View
+    android:id="@+id/line_separator_2"
+    android:layout_width="0dp"
+    android:layout_height="1dp"
+    app:layout_constraintTop_toBottomOf="@id/linear1"
+    android:layout_marginTop="16dp"
+    android:layout_marginHorizontal="22dp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:background="@color/line_gray"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

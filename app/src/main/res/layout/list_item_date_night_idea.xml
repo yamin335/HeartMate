@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_170sdp"
+        android:layout_margin="@dimen/_6sdp"
+        app:cardCornerRadius="14dp"
+        android:elevation="0dp"
+        app:cardUseCompatPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/date_night_catalog_cover"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:padding="@dimen/_8sdp"
+                android:orientation="vertical"
+                android:background="@drawable/round_rectangle_7"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Road Trip"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10ssp"
+                    android:fontFamily="@font/inter_normal"/>
+
+                <TextView
+                    android:id="@+id/experience"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="Learn my musical tastes"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_8ssp"
+                    android:fontFamily="@font/inter_light"
+                    android:layout_marginTop="@dimen/_2sdp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp">
+                    <TextView
+                        android:id="@+id/aspects"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        tools:text="16 Aspects of me"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/aspects_color"
+                        android:textSize="@dimen/_6ssp"
+                        android:fontFamily="@font/inter_normal"
+                        android:layout_marginEnd="@dimen/_2sdp"/>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnGuideMe"
+                        android:layout_width="@dimen/_45sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:background="@drawable/btn_round_corner_bg_blue_1"
+                        android:fontFamily="@font/inter_normal"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:text="Route"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_8sdp"
+                        android:textAllCaps="false"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

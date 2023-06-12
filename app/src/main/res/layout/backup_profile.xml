@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    tools:context=".ui.dashboard.profile.ProfileFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_img"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_75sdp"
+        android:padding="@dimen/_10sdp"
+        android:src="@drawable/ic_default_placeholder"
+        app:layout_constraintBottom_toBottomOf="@+id/dating_number_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dating_number_layout" />
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/inter_medium"
+        android:gravity="bottom"
+        android:singleLine="true"
+        android:text="Jermon"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_12ssp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/line_divider"
+        app:layout_constraintEnd_toStartOf="@+id/dating_number_layout"
+        app:layout_constraintStart_toEndOf="@+id/profile_img"
+        app:layout_constraintTop_toTopOf="@+id/profile_img" />
+
+    <View
+        android:id="@+id/line_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        app:layout_constraintBottom_toBottomOf="@id/profile_img"
+        app:layout_constraintEnd_toStartOf="@id/dating_number_layout"
+        app:layout_constraintStart_toEndOf="@id/profile_img"
+        app:layout_constraintTop_toTopOf="@id/profile_img" />
+
+    <TextView
+        android:id="@+id/bingo_member_tv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/inter_light"
+        android:text="@string/profile_bingo_member"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_img"
+        app:layout_constraintEnd_toEndOf="@+id/name_tv"
+        app:layout_constraintStart_toEndOf="@+id/profile_img"
+        app:layout_constraintTop_toBottomOf="@id/line_divider" />
+
+
+    <FrameLayout
+        android:id="@+id/dating_number_layout"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_82sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:paddingTop="@dimen/_2sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.tovalue.me.customviews.CircularDotProgress
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:dotColor="@color/mild_sky"
+            app:dotCount="18"
+            app:dotProgress="360" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dating_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/inter_bold"
+                android:text="133"
+                android:textColor="@color/mild_sky"
+                android:textSize="@dimen/_14ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/inter_light"
+                android:text="@string/app_tag_line"
+                android:textColor="@color/mild_sky"
+                android:textSize="@dimen/_6ssp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/banner_rv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_170sdp"
+        android:overScrollMode="never"
+        app:layout_constraintTop_toBottomOf="@id/dating_number_layout" />
+
+    <ScrollView
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:padding="@dimen/_10sdp"
+        app:layout_constraintBottom_toTopOf="@id/learn_more_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banner_rv">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/silver" />
+
+            <TextView
+                android:id="@+id/edit_profile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/tv_selector_bg"
+                android:fontFamily="@font/inter_normal"
+                android:gravity="center_vertical"
+                android:text="@string/edit_profile"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                app:drawableEndCompat="@drawable/ic_profile_editor" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/silver" />
+
+            <TextView
+                android:id="@+id/vision_board_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/tv_selector_bg"
+                android:fontFamily="@font/inter_normal"
+                android:gravity="center_vertical"
+                android:text="@string/vision_board"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                app:drawableEndCompat="@drawable/ic_vision_board" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/silver" />
+
+            <TextView
+                android:id="@+id/date_night_catalog_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/tv_selector_bg"
+                android:fontFamily="@font/inter_normal"
+                android:gravity="center_vertical"
+                android:text="@string/date_night_catalog"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                app:drawableEndCompat="@drawable/ic_dating_catalog" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/silver" />
+
+            <TextView
+                android:id="@+id/life_rythum_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/tv_selector_bg"
+                android:fontFamily="@font/inter_normal"
+                android:gravity="center_vertical"
+                android:text="@string/profile_bingo_card_inventory"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                app:drawableEndCompat="@drawable/ic_spectrum" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/silver" />
+
+            <TextView
+                android:id="@+id/dating_pref_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/tv_selector_bg"
+                android:fontFamily="@font/inter_normal"
+                android:gravity="center_vertical"
+                android:text="@string/profile_dating_preferences"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                app:drawableEndCompat="@drawable/ic_home_24" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/silver" />
+
+            <TextView
+                android:id="@+id/what_works_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/tv_selector_bg"
+                android:fontFamily="@font/inter_normal"
+                android:gravity="center_vertical"
+                android:text="@string/profile_what_works"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                app:drawableEndCompat="@drawable/ic_what_works" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/silver" />
+
+            <RelativeLayout
+                android:id="@+id/settingsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/settingTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/tv_selector_bg"
+                    android:fontFamily="@font/inter_normal"
+                    android:gravity="center_vertical"
+                    android:text="@string/title_activity_settings"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10ssp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:rotation="180"
+                    android:src="@drawable/ic_back_arrow" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/silver" />
+
+            <TextView
+                android:id="@+id/help_center_tv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:background="@drawable/tv_selector_bg"
+                android:fontFamily="@font/inter_normal"
+                android:gravity="center_vertical"
+                android:text="@string/profile_help_center"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                app:drawableEndCompat="@drawable/ic_help" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+
+    <include
+        android:id="@+id/learn_more_layout"
+        layout="@layout/item_learn_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_14sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_heading">18sp</dimen>
+    <dimen name="text_title">16sp</dimen>
+    <dimen name="text_sub_title">14sp</dimen>
+    <dimen name="text_content">12sp</dimen>
+    <dimen name="text_description">10sp</dimen>
+    <dimen name="banner_view_padding">8dp</dimen>
+
+    <!-- day -->
+    <dimen name="day_circle_width">24dp</dimen>
+    <dimen name="day_circle_height">24dp</dimen>
+    <dimen name="day_circle_radius">120dp</dimen>
+    <dimen name="day_circle_stroke_width">1dp</dimen>
+
+    // Dimens for CircularProgressBar
+    <dimen name="default_stroke_width">7dp</dimen>
+    <dimen name="default_background_stroke_width">3dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="marker_corner_radius">4dp</dimen>
+    <dimen name="marker_height">40dp</dimen>
+    <dimen name="marker_width">32dp</dimen>
+</resources>

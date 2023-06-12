@@ -1,0 +1,197 @@
+<resources>
+    <!--    &lt;!&ndash; Base application theme. &ndash;&gt;-->
+    <!--    <style name="Theme.MomensityBingo" parent="Theme.MaterialComponents.DayNight.DarkActionBar">-->
+    <!--        &lt;!&ndash; Primary brand color. &ndash;&gt;-->
+    <!--        <item name="colorPrimary">@color/purple_500</item>-->
+    <!--        <item name="colorPrimaryVariant">@color/purple_700</item>-->
+    <!--        <item name="colorOnPrimary">@color/white</item>-->
+    <!--        &lt;!&ndash; Secondary brand color. &ndash;&gt;-->
+    <!--        <item name="colorSecondary">@color/teal_200</item>-->
+    <!--        <item name="colorSecondaryVariant">@color/teal_700</item>-->
+    <!--        <item name="colorOnSecondary">@color/black</item>-->
+    <!--        &lt;!&ndash; Status bar color. &ndash;&gt;-->
+    <!--        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>-->
+    <!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+    <!--    </style>-->
+
+    <style name="Theme.MomensityBingo" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/main</item>
+        <item name="colorPrimaryDark">@color/main</item>
+        <item name="colorAccent">@color/black</item>
+        <!--        <item name="android:navigationBarColor">@color/main</item>-->
+        <item name="android:statusBarColor">@color/mild_blue</item>
+        <item name="android:clipToPadding">false</item>
+        <!--        <item name="background">@color/main</item>-->
+        <item name="android:windowActivityTransitions">true</item>
+        <!-- specify enter and exit transitions -->
+        <item name="android:windowEnterTransition">@transition/explode</item>
+        <item name="android:windowExitTransition">@transition/explode</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+
+        <item name="android:textColorPrimary">@color/light_primary_text_color</item>
+    </style>
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/main</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash</item>
+        <item name="postSplashScreenTheme">@style/Theme.MomensityBingo</item>
+    </style>
+
+    <style name="BottomNavigationViewTextStyle">
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="BottomNavigationTextApperance">
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="MoodRingEmotional">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/mood_ring_emotional</item>
+    </style>
+
+    <style name="MoodRingSpiritual">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/mood_ring_spiritual</item>
+    </style>
+
+    <style name="MoodRingPhysical">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/mood_ring_physical</item>
+    </style>
+
+    <style name="MoodRingMental">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/mood_ring_mental</item>
+    </style>
+
+    <style name="MoodRingCommunal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/mood_ring_communal</item>
+    </style>
+
+    <style name="MoodRingProfessional">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/mood_ring_professional</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize10Percent" parent="">
+        <item name="cornerSize">10%</item>
+    </style>
+
+
+    <style name="DialogTheme" parent="Theme.MomensityBingo">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    // For custom big screen dialog
+    <style name="CustomDialogFragment" parent="Theme.MaterialComponents.Light.Dialog">
+        <item name="colorPrimary">@color/mild_blue</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:layout_marginStart">30dp</item>
+        <item name="android:layout_marginEnd">30dp</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+
+    <style name="backButtonTheme" parent="Theme.MomensityBingo">
+        <item name="android:layout_marginStart">@dimen/_20sdp</item>
+        <item name="android:layout_marginTop">@dimen/_20sdp</item>
+
+    </style>
+
+
+    <style name="customRoundedImageViewBottom" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">35dp</item>
+        <item name="cornerSizeTopRight">35dp</item>
+        <item name="cornerSizeBottomLeft">35dp</item>
+        <item name="cornerSizeBottomRight">35dp</item>
+    </style>
+
+    <style name="customRoundedImageViewBottomWithBorder" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+        <item name="android:strokeColor">@color/white</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+
+    <style name="TabText" parent="@style/Widget.AppCompat.TextView">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
+    </style>
+
+    <style name="DatePickerTheme" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="android:buttonBarPositiveButtonStyle">
+            @style/DatePickerTheme.ButtonBarPositiveButtonStyle
+        </item>
+        <item name="android:buttonBarNegativeButtonStyle">
+            @style/DatePickerTheme.ButtonBarNegativeButtonStyle
+        </item>
+    </style>
+
+    <style name="DatePickerTheme.ButtonBarNegativeButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@android:color/holo_red_light</item>
+    </style>
+
+    <style name="DatePickerTheme.ButtonBarPositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="DialogStyle" parent="android:Theme.Holo.Light.Dialog">
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+    </style>
+
+
+    <style name="Notification.Button.TextStyle" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="textAllCaps">false</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/navigation_text_selected_state</item>
+        <item name="android:backgroundTint">@color/navigation_bg_selected_state</item>
+        <item name="cornerRadius">0dp</item>
+    </style>
+
+    <style name="Notification.Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/_24ssp</item>
+        <item name="android:fontFamily">@font/inter_normal</item>
+    </style>
+
+    <style name="CustomCardViewStyle" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay_card_custom_corners</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay_card_custom_corners" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">@dimen/_45sdp</item>
+        <item name="cornerSizeTopLeft">@dimen/_45sdp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+
+    <style name="Theme.MomensityBingo.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.MomensityBingo.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MomensityBingo.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="mySpinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">@color/textPurple</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+</resources>

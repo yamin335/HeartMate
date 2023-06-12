@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/_10sdp"
+    android:paddingTop="@dimen/_5sdp"
+    android:weightSum="5"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/observationTV"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:background="@color/gray"
+        android:fontFamily="@font/inter_bold"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:text="@string/dummyName"
+        android:textColor="@color/textPurple"
+        android:textSize="@dimen/_10ssp" />
+
+    <TextView
+        android:id="@+id/observationTotalCount"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fontFamily="@font/inter_bold"
+        android:gravity="center"
+        android:text="0 of 9"
+        android:textColor="@color/textPurple"
+        android:textSize="@dimen/_10sdp" />
+
+</LinearLayout>

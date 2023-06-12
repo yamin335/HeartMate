@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/_5sdp"
+    android:layout_gravity="bottom"
+    android:background="@drawable/whats_gray_border"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="@string/inventory"
+        android:fontFamily="@font/acme_regular"
+        android:textSize="@dimen/_16sdp"
+        android:letterSpacing="0.02"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/tvExcerpt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="Taking inventory of your life by the numbers."
+        android:fontFamily="@font/inter_normal"
+        android:textSize="@dimen/_12ssp"
+        android:letterSpacing="0.02"
+        android:minLines="3"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/ivHeaderImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_marginHorizontal="2dp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/image_back"
+        android:padding="@dimen/_10sdp"
+        android:scaleType="centerInside" />
+
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_180sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_20sdp"
+    android:layout_margin="@dimen/_5sdp"
+    android:layout_height="@dimen/_200sdp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/locationImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/default_avatar"
+            android:scaleType="centerCrop"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_80sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+          android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/round_bg"
+            android:padding="@dimen/_8sdp"
+            android:orientation="vertical"
+            android:weightSum="3"
+            android:backgroundTint="@color/transGray"
+            >
+
+            <TextView
+                android:id="@+id/dateTitleTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jimbarna Beach "
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/inter_bold"
+                />
+
+            <TextView
+                android:id="@+id/weekDefTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="jimberna,South"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="@color/dark_gray"
+                android:fontFamily="@font/inter_normal"
+                android:maxLines="1"
+                android:ellipsize="end"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="5"
+                android:layout_marginTop="@dimen/_5sdp"
+                >
+
+                <TextView
+                    android:id="@+id/aspectOfMeTV"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:text=""
+                    android:textColor="@color/dark_gray"
+                    android:layout_gravity="center"
+                    android:gravity="center|start"
+                    android:textSize="@dimen/_8ssp"
+                    />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:id="@+id/routeBtn"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                  app:backgroundTint="@color/mild_blue"
+                    app:cornerRadius="@dimen/_5sdp"
+                    android:text="@string/route"
+                    android:textAllCaps="false"
+                    android:gravity="center"
+                    android:textSize="@dimen/_10ssp"
+                    android:background="@drawable/round_bg"
+                    android:textColor="@color/white"
+                    android:foreground="@drawable/ripple_btn"
+                    android:clickable="true"
+                    />
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.cardview.widget.CardView>

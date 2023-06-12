@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dashboard_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/nav_profile" />
+
+    <item
+        android:id="@+id/dashboard_notification"
+        android:icon="@drawable/ic_bell"
+        android:title="@string/nav_notification" />
+
+    <item
+        android:id="@+id/dashboard_home"
+        android:icon="@drawable/ic_main"
+        android:title="@string/nav_home" />
+
+    <item
+        android:id="@+id/dashboard_fav"
+        android:icon="@drawable/fav_add"
+        android:title="@string/nav_fav" />
+
+    <item
+        android:id="@+id/dashboard_upcoming_plans"
+        android:icon="@drawable/ic_upcoming_plans"
+        android:title="@string/upcoming_plans" />
+
+<!--    <item-->
+<!--        android:id="@+id/dashboard_setting"-->
+<!--        android:icon="@drawable/setting"-->
+<!--        android:title="@string/nav_setting" />-->
+
+</menu>

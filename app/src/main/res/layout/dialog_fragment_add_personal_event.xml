@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transGray"
+    tools:context="com.tovalue.me.ui.dashboard.upcomingplans.dialog.AddPersonalEventDialog">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="@dimen/_16sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/back_btn"
+        android:src="@drawable/ic_back"
+        android:tint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/header_Tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/inter_medium"
+        android:text="@string/unavailable_block_scheduler"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_btn"/>
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:fontFamily="@font/inter_medium"
+        android:text="@string/title_tv"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="@id/header_Tv"
+        app:layout_constraintStart_toStartOf="@id/header_Tv"
+        app:layout_constraintTop_toBottomOf="@id/header_Tv" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/title_edit_Text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/round_bg"
+        android:hint="@string/enter_title"
+        android:inputType="text"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        app:layout_constraintEnd_toEndOf="@id/header_Tv"
+        app:layout_constraintStart_toStartOf="@id/header_Tv"
+        app:layout_constraintTop_toBottomOf="@+id/title_tv" />
+
+
+    <TextView
+        android:id="@+id/start_time_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/inter_medium"
+        android:text="@string/start_time"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="@id/header_Tv"
+        app:layout_constraintStart_toStartOf="@id/header_Tv"
+        app:layout_constraintTop_toBottomOf="@id/title_edit_Text" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/start_time_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:background="@drawable/round_bg"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:hint="@string/enter_start_time"
+        app:layout_constraintEnd_toEndOf="@id/header_Tv"
+        app:layout_constraintStart_toStartOf="@id/header_Tv"
+        app:layout_constraintTop_toBottomOf="@+id/start_time_tv" />
+
+    <TextView
+        android:id="@+id/end_time_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:fontFamily="@font/inter_medium"
+        android:text="@string/end_time"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="@id/header_Tv"
+        app:layout_constraintStart_toStartOf="@id/header_Tv"
+        app:layout_constraintTop_toBottomOf="@id/start_time_edit_text" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/end_time_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:background="@drawable/round_bg"
+        android:gravity="center_vertical"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:text="@string/enter_end_time"
+        app:layout_constraintEnd_toEndOf="@id/header_Tv"
+        app:layout_constraintStart_toStartOf="@id/header_Tv"
+        app:layout_constraintTop_toBottomOf="@+id/end_time_tv" />
+
+    <TextView
+        android:id="@+id/not_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:fontFamily="@font/inter_medium"
+        android:text="@string/note"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_17ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/end_time_edit_text" />
+
+    <TextView
+        android:id="@+id/description_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:fontFamily="@font/inter_medium"
+        android:text="@string/description_unavailable"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintEnd_toEndOf="@id/header_Tv"
+        app:layout_constraintStart_toStartOf="@id/header_Tv"
+        app:layout_constraintTop_toBottomOf="@id/not_tv" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/done_btn"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/btn_round_corner_bg"
+        android:text="@string/done"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="@id/header_Tv"
+        app:layout_constraintTop_toBottomOf="@id/description_tv" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

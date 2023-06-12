@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.auth.primer.LandingPageFragment">
+
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:resize_mode="fill"
+        />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:tint="@color/white"
+        android:src="@drawable/ic_splash"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_20sdp" />
+
+    <TextView
+        android:id="@+id/tvm_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/acme_regular"
+        android:text="@string/app_name"
+        android:textSize="@dimen/_24ssp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <TextView
+        android:id="@+id/tag_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_light"
+        android:text="@string/app_tag"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvm_title"
+        android:layout_marginTop="@dimen/_5sdp"/>
+
+    <TextView
+        android:id="@+id/invite_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_normal"
+        android:textColor="@color/mild_blue"
+        android:text="@string/invite"
+        android:textSize="@dimen/_12ssp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:layout_marginEnd="@dimen/_8sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/sign_tv"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/sign_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_normal"
+        android:text="@string/sign_in"
+        android:visibility="gone"
+        android:textColor="@color/mild_blue"
+        android:textSize="@dimen/_12ssp"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:drawablePadding="@dimen/_4sdp"
+        app:drawableEndCompat="@drawable/ic_forward_arrow"
+        android:drawableTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/invite_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/invite_tv"
+        app:layout_constraintTop_toTopOf="@+id/invite_tv" />
+
+    <TextView
+        android:id="@+id/login_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_normal"
+        android:text="@string/sign_in"
+        android:textColor="@color/mild_blue"
+        android:textSize="@dimen/_12ssp"
+        android:gravity="center"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/invite_tv"
+        android:layout_marginBottom="@dimen/_50sdp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/create_btn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_50sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/login_tv"
+        android:layout_marginBottom="@dimen/_15sdp"
+       android:layout_marginHorizontal="@dimen/_30sdp"
+        android:text="@string/continue_with_phone_number"
+        android:fontFamily="@font/inter_normal"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_14ssp"
+        android:background="@drawable/btn_primary_bg_shape1"/>
+
+    <TextView
+        android:id="@+id/link_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:fontFamily="@font/inter_normal"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/account_terms"
+        android:textColor="@color/mild_blue"
+        android:textSize="@dimen/_10ssp"
+        android:paddingStart="@dimen/_18sdp"
+        android:paddingEnd="@dimen/_18sdp"
+        app:layout_constraintBottom_toTopOf="@id/create_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/availability_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:id="@+id/monday_cb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_normal"
+        android:gravity="center_vertical"
+        android:buttonTint="@color/mild_blue"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_20sdp"
+        android:text="@string/primer_two_availability_monday"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+    <CheckBox
+        android:id="@+id/tuesday_cd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_normal"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/_20sdp"
+        android:buttonTint="@color/mild_blue"
+        android:paddingEnd="@dimen/_20sdp"
+        android:text="@string/primer_two_availability_tuesday"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+    <CheckBox
+        android:id="@+id/wednesday_cb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_normal"
+        android:gravity="center_vertical"
+        android:buttonTint="@color/mild_blue"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_20sdp"
+        android:text="@string/primer_two_availability_wednesday"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+    <CheckBox
+        android:id="@+id/thursday_cb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_normal"
+        android:gravity="center_vertical"
+        android:buttonTint="@color/mild_blue"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_20sdp"
+        android:text="@string/primer_two_availability_thursday"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+    <CheckBox
+        android:id="@+id/friday_cb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_normal"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_20sdp"
+        android:buttonTint="@color/mild_blue"
+        android:text="@string/primer_two_availability_friday"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+    <CheckBox
+        android:id="@+id/saturday_cb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_normal"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_20sdp"
+        android:buttonTint="@color/mild_blue"
+        android:text="@string/primer_two_availability_saturday"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray" />
+
+    <CheckBox
+        android:id="@+id/sunday_cb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_normal"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_20sdp"
+        android:text="@string/primer_two_availability_sunday"
+        android:buttonTint="@color/mild_blue"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:visibility="gone"/>
+
+    <CheckBox
+        android:id="@+id/all_day_cb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:fontFamily="@font/inter_normal"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_20sdp"
+        android:buttonTint="@color/mild_blue"
+        android:text="@string/primer_two_availability_all"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp" />
+
+</LinearLayout>

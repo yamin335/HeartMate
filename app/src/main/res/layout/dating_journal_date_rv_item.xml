@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+  >
+
+<LinearLayout
+    android:layout_width="@dimen/_30sdp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+
+    >
+
+    <FrameLayout
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/trackIndicatorCompleteIV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/tracker_indicator_complete"
+            />
+        <View
+            android:id="@+id/strick"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+
+
+    </FrameLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    >
+
+    <View
+        android:id="@+id/lineIndicatorV"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/black"
+        android:layout_gravity="center"
+        />
+    <View
+        android:id="@+id/dotedIndicatorV"
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/doted_bg"
+        android:layout_gravity="center"
+        android:visibility="gone"
+
+        />
+
+
+</LinearLayout>
+
+
+
+</LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dummyName"
+            android:gravity="center"
+            android:textColor="@color/textPurple"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/inter_bold"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:layout_marginTop="@dimen/_5sdp"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/dateTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:text="@string/dummyDate"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/textPurple"
+                    android:textSize="@dimen/_12ssp"
+                    android:fontFamily="@font/inter_bold"
+                    />
+                <TextView
+                    android:id="@+id/dayTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/dummyDay"
+                    android:gravity="center|top"
+                    android:textColor="@color/textPurple"
+                    android:textSize="@dimen/_12ssp"
+                    android:fontFamily="@font/inter_normal"
+                    />
+
+            </LinearLayout>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                app:cardCornerRadius="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="10dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                    android:padding="@dimen/_10sdp"
+                    >
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/profile_img"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:src="@drawable/dummy"
+                        android:scaleType="centerCrop"
+                        app:shapeAppearanceOverlay="@style/customRoundedImageViewBottomWithBorder"
+                        />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dummyName"
+                        android:gravity="start"
+                        android:textColor="@color/textPurple"
+                        android:textSize="@dimen/_12ssp"
+                        android:fontFamily="@font/inter_bold"
+                        android:layout_toEndOf="@id/profile_img"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:paddingStart="@dimen/_10sdp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2"
+                        android:layout_below="@id/name"
+                        android:layout_toEndOf="@id/profile_img"
+                        android:layout_alignParentBottom="true"
+                        >
+
+                        <TextView
+                            android:id="@+id/youtCount"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="@string/you"
+                            android:gravity="center"
+                            android:textColor="@color/textPurple"
+                            android:fontFamily="@font/inter_normal"
+                            android:textSize="@dimen/_12ssp"
+                            />
+                        <TextView
+                            android:id="@+id/otherCountTV"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:text="@string/other"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textColor="@color/textPurple"
+                            android:fontFamily="@font/inter_normal"
+                            android:textSize="@dimen/_12ssp"
+                            />
+
+                    </LinearLayout>
+
+
+
+                </RelativeLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

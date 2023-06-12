@@ -1,0 +1,168 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
+}
+
+android {
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.tovalue.me"
+        minSdk 23
+        targetSdk 32
+        versionCode 10
+        versionName "1.1.8"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        def localProperties = new Properties()
+        localProperties.load(new FileInputStream(rootProject.file("local.properties")))
+        buildConfigField("String", "BASE64_ENCODED_PUBLIC_KEY", "\"" + localProperties['base64EncodedPublicKey'] + "\"")
+    }
+
+   /* signingConfigs {
+        release {
+            storeFile file("bingo_certificate.jks")
+            storePassword "momensityValueApp"
+            keyAlias "ToValueApp"
+            keyPassword "momensityValueApp"
+        }
+        debug {
+            storeFile file("bingo_certificate.jks")
+            storePassword "momensityValueApp"
+            keyAlias "ToValueApp"
+            keyPassword "momensityValueApp"
+        }
+    }
+*/
+    buildTypes {
+        release {
+//            signingConfig signingConfigs.release
+            minifyEnabled false
+            shrinkResources false
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+//            signingConfig signingConfigs.debug
+            debuggable true
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding = true
+    }
+}
+
+dependencies {
+
+    implementation project(path: ':customeCard')
+    //implementation project(path: ':unityLibrary')
+
+    def dp_sp_version = "1.1.0"
+    def splash_api_version = "1.0.0-rc01"
+    def retrofit_version = "2.9.0"
+    def okhttp_version = "4.9.3"
+    def lottie_anim_version = "3.4.2"
+    def circular_lib_version = "3.1.0"
+    def glide_version = "4.13.2"
+    def dexter_version = "6.2.3"
+    def billing_version = "4.1.0"
+    def lifecycle_version = "2.6.0-alpha01"
+    def coroutine_version = "1.3.9"
+    def activity_ktx_version = "1.5.1"
+    def fragment_ktx_version = "1.5.2"
+    def country_version = "2.5.0"
+    def map_sdk_version = "18.1.0"
+    def google_play_services = "20.0.0"
+    def spider_chart = "1.0.2"
+    def gif_version = "1.2.25"
+
+    implementation 'androidx.core:core-ktx:1.8.0'
+    implementation 'androidx.appcompat:appcompat:1.5.0'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    // retrofit
+    implementation("com.squareup.retrofit2:converter-gson:$retrofit_version")
+    implementation("com.squareup.retrofit2:retrofit:$retrofit_version")
+    implementation("com.squareup.okhttp3:okhttp:$okhttp_version")
+    implementation("com.squareup.okhttp3:logging-interceptor:$okhttp_version")
+
+    // lottie animation
+//    implementation("com.airbnb.android:lottie:$lottie_anim_version")
+
+    // density pixel(dp), scale pixel(sp)
+    implementation("com.intuit.sdp:sdp-android:$dp_sp_version")
+    implementation("com.intuit.ssp:ssp-android:$dp_sp_version")
+
+    // splash api
+    implementation("androidx.core:core-splashscreen:$splash_api_version")
+
+    // circular imageView
+    implementation("de.hdodenhof:circleimageview:$circular_lib_version")
+
+    // glide
+    implementation("com.github.bumptech.glide:glide:$glide_version")
+    annotationProcessor("com.github.bumptech.glide:compiler:$glide_version")
+
+    // Dexter
+    implementation("com.karumi:dexter:$dexter_version")
+
+    // google billing
+    implementation("com.android.billingclient:billing-ktx:$billing_version")
+
+    // firebase
+    // Import the Firebase BoM
+    implementation platform('com.google.firebase:firebase-bom:30.3.1')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-messaging-ktx'
+    implementation 'com.google.firebase:firebase-auth-ktx'
+
+    // ViewModel
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
+
+    // LiveData
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
+
+    // Lifecycles only (without ViewModel or LiveData)
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version")
+
+    // coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutine_version")
+
+    implementation("androidx.activity:activity-ktx:$activity_ktx_version")
+    implementation("androidx.fragment:fragment-ktx:$fragment_ktx_version")
+
+    // country code list
+    implementation("com.hbb20:ccp:$country_version")
+
+    // google map | google play services
+    implementation("com.google.android.gms:play-services-maps:$map_sdk_version")
+    implementation("com.google.android.gms:play-services-location:$google_play_services")
+
+    // spider chart
+    implementation("com.github.nikolajakshic:spiderchart:$spider_chart")
+
+    // gif loader
+    implementation("pl.droidsonroids.gif:android-gif-drawable:$gif_version")
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    //Exoplayer
+    implementation 'com.google.android.exoplayer:exoplayer:2.18.1'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.18.1'
+
+    implementation 'com.google.android.libraries.places:places:2.6.0'
+}

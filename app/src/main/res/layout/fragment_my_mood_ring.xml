@@ -1,0 +1,1011 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_rectangle_1">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/_14sdp"
+        android:paddingEnd="@dimen/_14sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            app:srcCompat="@drawable/back_icon"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/titleHeader"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/today_i_m_feeling"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp"
+            android:fontFamily="@font/inter_bold"/>
+
+        <ImageView
+            android:id="@+id/btnUpload"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            app:srcCompat="@drawable/cloud_upload"
+            app:tint="@color/white" />
+    </LinearLayout>
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/subHeaderTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:fontFamily="@font/inter_light"
+                android:textSize="@dimen/_10ssp"
+                android:gravity="center"
+                android:text="@string/capture_and_share"
+                android:textColor="@color/white"/>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutSnap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/appIcon"
+                    android:visibility="gone"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/homebtn"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/appTag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/acme_regular"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/_24sdp"
+                    android:paddingBottom="@dimen/_18sdp"
+                    android:text="@string/app_tag_line"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_24ssp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/appIcon"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/appTag">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/acme_regular"
+                        android:gravity="center"
+                        android:text="@string/my_mood_ring"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativeSpiritual"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ProgressBar
+                            android:id="@+id/progressSpiritual"
+                            style="@style/MoodRingSpiritual"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="95dp"
+                            android:layout_marginTop="95dp"
+                            android:layout_marginEnd="95dp"
+                            android:layout_marginBottom="95dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:progress="80" />
+
+                        <TextView
+                            android:id="@+id/valueSpiritual"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="110dp"
+                            android:textColor="@color/white"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:text="100%" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeEmotional"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ProgressBar
+                            android:id="@+id/progressEmotional"
+                            style="@style/MoodRingEmotional"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="65dp"
+                            android:layout_marginTop="65dp"
+                            android:layout_marginEnd="65dp"
+                            android:layout_marginBottom="65dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:progress="80" />
+
+                        <TextView
+                            android:id="@+id/valueEmotional"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="90dp"
+                            android:textColor="@color/white"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:text="100%" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeMental"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ProgressBar
+                            android:id="@+id/progressMental"
+                            style="@style/MoodRingMental"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="35dp"
+                            android:layout_marginTop="35dp"
+                            android:layout_marginEnd="35dp"
+                            android:layout_marginBottom="35dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:progress="80" />
+
+                        <TextView
+                            android:id="@+id/valueMental"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="70dp"
+                            android:textColor="@color/white"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:text="100%" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativePhysical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ProgressBar
+                            android:id="@+id/progressPhysical"
+                            style="@style/MoodRingPhysical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginBottom="5dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:progress="80" />
+
+                        <TextView
+                            android:id="@+id/valuePhysical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="49dp"
+                            android:textColor="@color/white"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:text="100%" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeProfessional"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ProgressBar
+                            android:id="@+id/progressProfessional"
+                            style="@style/MoodRingProfessional"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="-25dp"
+                            android:layout_marginTop="-25dp"
+                            android:layout_marginEnd="-25dp"
+                            android:layout_marginBottom="-25dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:progress="80" />
+
+                        <TextView
+                            android:id="@+id/valueProfessional"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="29dp"
+                            android:textColor="@color/white"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:text="100%" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeCommunal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ProgressBar
+                            android:id="@+id/progressCommunal"
+                            style="@style/MoodRingCommunal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="-55dp"
+                            android:layout_marginTop="-55dp"
+                            android:layout_marginEnd="-55dp"
+                            android:layout_marginBottom="-55dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:progress="80"/>
+
+                        <TextView
+                            android:id="@+id/valueCommunal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="8dp"
+                            android:textColor="@color/white"
+                            tools:text="100%" />
+                    </RelativeLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintTracking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+                    <LinearLayout
+                        android:id="@+id/linearTracking"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Daily Mood Ring"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_16ssp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:id="@+id/btnHistory"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:text="View History"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_13ssp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/titleMoodRing"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mood_ring_for"
+                        android:textColor="@color/white"
+                        android:visibility="gone"
+                        android:textSize="@dimen/_14ssp"
+                        android:fontFamily="@font/inter_bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                    <LinearLayout
+                        android:id="@+id/linearMoodSummary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent">
+                        <TextView
+                            android:id="@+id/textFirstName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:text="@string/mood_ring_for"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_9ssp"
+                            android:fontFamily="@font/inter_light" />
+                        <TextView
+                            android:id="@+id/moodSummary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:text="@string/mood_ring_for"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14ssp"
+                            android:fontFamily="@font/inter_light" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearMoodControl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@id/constraintTracking"
+                    android:paddingTop="@dimen/_12sdp"
+                    android:paddingBottom="@dimen/_20sdp"
+                    android:paddingHorizontal="@dimen/_8sdp">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginEnd="@dimen/_6sdp">
+
+                        <LinearLayout
+                            android:id="@+id/btnIncreaseEmotionally"
+                            android:layout_width="match_parent"
+                            android:layout_height="26dp"
+                            android:background="@drawable/mood_control_increase_button_bg"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                app:srcCompat="@drawable/ic_round_add_24"
+                                app:tint="@color/white" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Emotionally"
+                            android:background="@color/emotional_start"
+                            android:textSize="@dimen/_6ssp"
+                            android:paddingHorizontal="2dp"
+                            android:paddingVertical="8dp"
+                            android:textColor="@color/white"/>
+
+                        <LinearLayout
+                            android:id="@+id/btnDecreaseEmotionally"
+                            android:layout_width="match_parent"
+                            android:layout_height="26dp"
+                            android:background="@drawable/mood_control_decrease_button_bg"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                app:srcCompat="@drawable/ic_round_remove_24"
+                                app:tint="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginEnd="@dimen/_6sdp">
+
+                        <LinearLayout
+                            android:id="@+id/btnIncreaseMentally"
+                            android:layout_width="match_parent"
+                            android:layout_height="26dp"
+                            android:background="@drawable/mood_control_increase_button_bg"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                app:srcCompat="@drawable/ic_round_add_24"
+                                app:tint="@color/white" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Mentally"
+                            android:background="@color/mental_start"
+                            android:textSize="@dimen/_6ssp"
+                            android:paddingHorizontal="2dp"
+                            android:paddingVertical="8dp"
+                            android:textColor="@color/black"/>
+
+                        <LinearLayout
+                            android:id="@+id/btnDecreaseMentally"
+                            android:layout_width="match_parent"
+                            android:layout_height="26dp"
+                            android:background="@drawable/mood_control_decrease_button_bg"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                app:srcCompat="@drawable/ic_round_remove_24"
+                                app:tint="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginEnd="@dimen/_6sdp">
+
+                        <LinearLayout
+                            android:id="@+id/btnIncreaseSpiritually"
+                            android:layout_width="match_parent"
+                            android:layout_height="26dp"
+                            android:background="@drawable/mood_control_increase_button_bg"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                app:srcCompat="@drawable/ic_round_add_24"
+                                app:tint="@color/white" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Spiritually"
+                            android:background="@color/spiritual_start"
+                            android:textSize="@dimen/_6ssp"
+                            android:paddingHorizontal="2dp"
+                            android:paddingVertical="8dp"
+                            android:textColor="@color/white"/>
+
+                        <LinearLayout
+                            android:id="@+id/btnDecreaseSpiritually"
+                            android:layout_width="match_parent"
+                            android:layout_height="26dp"
+                            android:background="@drawable/mood_control_decrease_button_bg"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                app:srcCompat="@drawable/ic_round_remove_24"
+                                app:tint="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginEnd="@dimen/_6sdp">
+
+                        <LinearLayout
+                            android:id="@+id/btnIncreaseCommunally"
+                            android:layout_width="match_parent"
+                            android:layout_height="26dp"
+                            android:background="@drawable/mood_control_increase_button_bg"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                app:srcCompat="@drawable/ic_round_add_24"
+                                app:tint="@color/white" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Communally"
+                            android:background="@color/communal_start"
+                            android:textSize="@dimen/_6ssp"
+                            android:paddingHorizontal="2dp"
+                            android:paddingVertical="8dp"
+                            android:textColor="@color/black"/>
+
+                        <LinearLayout
+                            android:id="@+id/btnDecreaseCommunally"
+                            android:layout_width="match_parent"
+                            android:layout_height="26dp"
+                            android:background="@drawable/mood_control_decrease_button_bg"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                app:srcCompat="@drawable/ic_round_remove_24"
+                                app:tint="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginEnd="@dimen/_6sdp">
+
+                        <LinearLayout
+                            android:id="@+id/btnIncreasePhysically"
+                            android:layout_width="match_parent"
+                            android:layout_height="26dp"
+                            android:background="@drawable/mood_control_increase_button_bg"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                app:srcCompat="@drawable/ic_round_add_24"
+                                app:tint="@color/white" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Physically"
+                            android:background="@color/physical_start"
+                            android:textSize="@dimen/_6ssp"
+                            android:paddingHorizontal="2dp"
+                            android:paddingVertical="8dp"
+                            android:textColor="@color/white"/>
+
+                        <LinearLayout
+                            android:id="@+id/btnDecreasePhysically"
+                            android:layout_width="match_parent"
+                            android:layout_height="26dp"
+                            android:background="@drawable/mood_control_decrease_button_bg"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                app:srcCompat="@drawable/ic_round_remove_24"
+                                app:tint="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/btnIncreaseProfessionally"
+                            android:layout_width="match_parent"
+                            android:layout_height="26dp"
+                            android:background="@drawable/mood_control_increase_button_bg"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                app:srcCompat="@drawable/ic_round_add_24"
+                                app:tint="@color/white" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Professionally"
+                            android:background="@color/professional_start"
+                            android:textSize="@dimen/_6ssp"
+                            android:paddingHorizontal="2dp"
+                            android:paddingVertical="8dp"
+                            android:textColor="@color/black"/>
+
+                        <LinearLayout
+                            android:id="@+id/btnDecreaseProfessionally"
+                            android:layout_width="match_parent"
+                            android:layout_height="26dp"
+                            android:background="@drawable/mood_control_decrease_button_bg"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center">
+                            <ImageView
+                                android:layout_width="24dp"
+                                android:layout_height="24dp"
+                                app:srcCompat="@drawable/ic_round_remove_24"
+                                app:tint="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/_70sdp">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/optionalRequirements"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_marginHorizontal="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_12sdp">
+
+                    <LinearLayout
+                        android:id="@+id/linearIncludeExplanation"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        app:layout_constraintEnd_toStartOf="@+id/btnShare"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/btnIncludeExplanation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/custom_checkbox_bg"
+                            android:minWidth="0dp"
+                            android:minHeight="0dp"
+                            android:layout_marginTop="@dimen/_2sdp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="I would like to include an explanation"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="@dimen/_8sdp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearShowExplanationSeeker"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/btnShare"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/linearIncludeExplanation">
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/btnShowExplanationSeeker"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:button="@drawable/custom_checkbox_bg"
+                            android:minWidth="0dp"
+                            android:minHeight="0dp"
+                            android:checked="true"
+                            android:layout_marginTop="@dimen/_2sdp"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginStart="@dimen/_8sdp"
+                            android:text="I would like to see who asks me for the explanation"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnShare"
+                        android:layout_width="@dimen/_65sdp"
+                        android:layout_height="@dimen/_28sdp"
+                        android:background="@drawable/btn_round_corner_bg_yellow"
+                        android:fontFamily="@font/inter_normal"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:text="@string/share" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <LinearLayout
+                    android:id="@+id/linearExplanation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:background="@color/communal_start"
+                    android:padding="@dimen/_12sdp"
+                    android:layout_marginHorizontal="@dimen/_12sdp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="The reasons why"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_18ssp"
+                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:gravity="bottom"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_8sdp"
+                        android:background="@color/white"
+                        android:layout_marginTop="@dimen/_12sdp">
+                        <TextView
+                            android:id="@+id/labelEmotional"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:text="Emotionally I am at 20% because"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/etEmotional"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:lines="2"
+                            android:maxLines="3"
+                            android:hint="no explanation"
+                            android:enabled="false"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_8sdp"
+                        android:background="@color/white"
+                        android:layout_marginTop="@dimen/_12sdp">
+                        <TextView
+                            android:id="@+id/labelMental"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:text="Mentally I am at 20% because"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/etMental"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:lines="2"
+                            android:maxLines="3"
+                            android:hint="no explanation"
+                            android:enabled="false"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_8sdp"
+                        android:background="@color/white"
+                        android:layout_marginTop="@dimen/_12sdp">
+                        <TextView
+                            android:id="@+id/labelSpiritual"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:text="Spiritually I am at 20% because"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/etSpiritual"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:lines="2"
+                            android:maxLines="3"
+                            android:hint="no explanation"
+                            android:enabled="false"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_8sdp"
+                        android:background="@color/white"
+                        android:layout_marginTop="@dimen/_12sdp">
+                        <TextView
+                            android:id="@+id/labelCommunal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:text="Communally I am at 20% because"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/etCommunal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:lines="2"
+                            android:maxLines="3"
+                            android:hint="no explanation"
+                            android:enabled="false"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_8sdp"
+                        android:background="@color/white"
+                        android:layout_marginTop="@dimen/_12sdp">
+                        <TextView
+                            android:id="@+id/labelPhysical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:text="Physically I am at 20% because"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/etPhysical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:lines="2"
+                            android:maxLines="3"
+                            android:hint="no explanation"
+                            android:enabled="false"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_8sdp"
+                        android:background="@color/white"
+                        android:layout_marginTop="@dimen/_12sdp">
+                        <TextView
+                            android:id="@+id/labelProfessional"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:text="Professionally I am at 20% because"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/etProfessional"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:lines="2"
+                            android:maxLines="3"
+                            android:hint="no explanation"
+                            android:enabled="false"/>
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btnBackToTop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_30sdp"
+                        android:background="@drawable/btn_round_corner_bg_yellow"
+                        android:fontFamily="@font/inter_normal"
+                        android:paddingStart="@dimen/_12sdp"
+                        android:paddingEnd="@dimen/_12sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:text="Back To Top"
+                        android:drawableStart="@drawable/ic_round_arrow_upward_24"
+                        android:drawablePadding="@dimen/_5sdp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

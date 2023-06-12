@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/_10sdp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/monthTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dummyName"
+        android:gravity="center"
+        android:textColor="@color/mild_blue"
+        android:textSize="@dimen/_12ssp"
+        android:fontFamily="@font/inter_medium"
+        />
+
+    <ImageView
+        android:id="@+id/calIV"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/cal_light_black"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="@dimen/_5sdp"
+        />
+
+</LinearLayout>

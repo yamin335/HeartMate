@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_16sdp"
+        tools:context="com.tovalue.me.ui.dashboard.manageInvitation.InvitationHistoryActivity">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:tint="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/title_tv"
+            app:layout_constraintEnd_toStartOf="@+id/title_tv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/title_tv" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/inter_normal"
+            android:maxLines="2"
+            android:text="@string/manage_existing_invitation"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintBottom_toTopOf="@+id/phone_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/back_btn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/phone_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:fontFamily="@font/inter_bold"
+            android:text="@string/phone"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/separator"
+            app:layout_constraintEnd_toStartOf="@+id/day_pending_tv"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_tv" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/day_pending_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
+            android:text="@string/days_pending"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/phone_tv"
+            app:layout_constraintEnd_toStartOf="@+id/action_tv"
+            app:layout_constraintStart_toEndOf="@+id/phone_tv"
+            app:layout_constraintTop_toTopOf="@+id/phone_tv" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/action_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
+            android:paddingStart="@dimen/_16sdp"
+            android:text="@string/action"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/phone_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/day_pending_tv"
+            app:layout_constraintTop_toTopOf="@+id/phone_tv" />
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="0dp"
+            android:layout_height=".5dp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:background="@color/light_grey"
+            app:layout_constraintBottom_toTopOf="@+id/content_container"
+            app:layout_constraintEnd_toEndOf="@+id/action_tv"
+            app:layout_constraintStart_toStartOf="@+id/phone_tv"
+            app:layout_constraintTop_toBottomOf="@+id/phone_tv" />
+
+        <FrameLayout
+            android:id="@+id/content_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/action_tv"
+            app:layout_constraintStart_toStartOf="@+id/phone_tv"
+            app:layout_constraintTop_toBottomOf="@+id/phone_tv">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/invitation_history_rV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:visibility="gone"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:listitem="@layout/item_manage_invitation_history" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/empty_view_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/no_invitation_pending"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_24ssp"
+                android:visibility="gone"
+                app:fontFamily="@font/inter_normal" />
+
+        </FrameLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

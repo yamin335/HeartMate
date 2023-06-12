@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main">#ECF3F3</color>
+    <color name="light_blue">#00FAE0</color>
+    <color name="dark_sky">#80CCD3</color>
+    <color name="secondary_light_blue">#6EECDF</color>
+    <color name="gray">#D9D9D9</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="mild_sky">#81CDD9</color>
+    <color name="blue">#0099CC</color>
+    <color name="silver">#D4D4D4</color>
+    <color name="light_silver">#B7B7B7</color>
+    <color name="line_gray">#C8C7C7</color>
+    <color name="dark_gray">#666666</color>
+    <color name="light_gray">#C2C2C2</color>
+    <color name="mild_blue">#1596A1</color>
+    <color name="transparent_blue">#4D0099CC</color>
+    <color name="skinny_gray">#9FADAC</color>
+    <color name="very_light_grey">#C3C2C2</color>
+    <color name="yellow">#FFCC00</color>
+
+    <color name="teal">#1FA2A5</color>
+    <color name="dark_teal">#005C6A</color>
+    <color name="background">#00A4C5</color>
+    <color name="light_blue_i">#7A8DE6</color>
+    <color name="dark_teel">#082F2F</color>
+    <color name="light_teal">#2B3933</color>
+    <color name="pale_teal">#137680</color>
+    <color name="light_grey">#687888</color>
+    <color name="off_yellow">#EEE8A9</color>
+    <color name="soft_teal">#E6F4F1</color>
+    <color name="red">#A83900</color>
+    <color name="orange">#FF8847</color>
+    <color name="purple">#251556</color>
+    <color name="ball_blue">#4BABC6</color>
+    <color name="light_purple">#1A19B0</color>
+    <color name="job_teal">#6BC1CD</color>
+
+    <color name="mudColor">#AD4444</color>
+
+    <color name="transBlack">#65121212</color>
+    <color name="textPurple">#1A19B0</color>
+    <color name="lightTextPurple">#E11A19B0</color>
+    <color name="light_sky">#ECF3F3</color>
+    <color name="smoothGray">#EDEDED</color>
+    <color name="blackTranslucent">#CC000000</color>
+    <color name="transGray">#DAEDEDED</color>
+
+    <color name="uncompleted_color">#A3E0D9</color>
+    <color name="uncompleted_text_color">#03A9F4</color>
+
+
+    <color name="notification_bg">#282a36</color>
+    <color name="notification_text">#668c8e</color>
+    <color name="notification_selected_text_color">#78a9a7</color>
+    <color name="notification_unselected_text_color">#394a4a</color>
+    <color name="notification_selected_bg_color">#FFFFFF</color>
+    <color name="notification_unselected_bg_color">#0e0b0b</color>
+    <color name="notification_setting_border_color">#80000000</color>
+    <color name="notification_view_color">#1596A1</color>
+    <color name="notification_date_color">#8E8E8E</color>
+
+    <color name="circle_stroke">#28A0BB</color>
+    <color name="gray_text_color">#A6ABAC</color>
+    <color name="vertical_divider_color">#F7F7FB</color>
+    <color name="light_gray_stroke">#DCDCDC</color>
+    <color name="profile_slider_background_color">#2600FAE0</color>
+    <color name="dark_gray_profile">#AFA4A4</color>
+    <color name="light_gray_profile">#E5DFDF</color>
+
+    <color name="white_50">#80FFFFFF</color>
+    <color name="black_text">#0A0A0A</color>
+    <color name="black_text1">#040404</color>
+    <color name="gray_border">#CDCDCD</color>
+    <color name="blue_btn">#19AFB9</color>
+
+    <color name="mood_ring_bg_start">#041F1B</color>
+    <color name="mood_ring_bg_end">#063247</color>
+
+    <color name="mood_ring_progress_bg">#071909</color>
+
+    <color name="mood_ring_top_bar_bg_start">#041F1B</color>
+    <color name="mood_ring_top_bar_bg_end">#063247</color>
+
+    <color name="spiritual_start">#F84A1F</color>
+    <color name="spiritual_end">#3E001F</color>
+
+    <color name="emotional_start">#AD0AFA</color>
+    <color name="emotional_end">#430061</color>
+
+    <color name="mental_start">#00DACD</color>
+    <color name="mental_end">#025478</color>
+
+    <color name="physical_start">#26CD74</color>
+    <color name="physical_end">#03726D</color>
+
+    <color name="professional_start">#FFC307</color>
+    <color name="professional_end">#B06B0E</color>
+
+    <color name="communal_start">#D9D9D9</color>
+    <color name="communal_end">#2C2E2D</color>
+
+    <color name="mood_control_bg">#4F9DB8</color>
+    <color name="mood_control_bg_pressed">#81D7F4</color>
+
+    <color name="mood_ring_history_item_bg">#E8E6EC</color>
+    <color name="mood_ring_history_item_button_bg">#71C3CF</color>
+    <color name="txt_mud_color">#958484</color>
+
+
+    <color name="alpha_color_light_gray">#D9FBFBFB</color>
+    <color name="aspects_color">#7B6F6F</color>
+    <color name="dark_red">#ff0000</color>
+    <color name="light_clay">#BBB9B9</color>
+
+    <color name="placeholderColor">#807A7A</color>
+    <color name="placeholderColor1">#8A8484</color>
+    <color name="pink_color">#EE43F1</color>
+    <color name="dark_pink_color">#C947C5</color>
+    <color name="dark_pink_color1">#6D476C</color>
+    <color name="color_blue_checkbox">#009688</color>
+
+    <color name="optional_text_color">#736868</color>
+    <color name="orange_dark">#DE482F</color>
+    <color name="purple_dark">#351C56</color>
+    <color name="light_golden">#D99B3F</color>
+    <color name="green_dark">#0A4347</color>
+    <color name="blue_sky">#E3F4F3</color>
+    <color name="greenish_dark">#068073</color>
+    <color name="very_dark_yellow">#DEB200</color>
+    <color name="very_light_gray">#E0E0E0</color>
+
+</resources>

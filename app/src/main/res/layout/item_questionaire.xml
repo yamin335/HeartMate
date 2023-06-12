@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_12sdp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/question_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_normal"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/slider_layout"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_50sdp"
+        app:layout_constraintEnd_toEndOf="@+id/question_tv"
+        app:layout_constraintStart_toStartOf="@+id/question_tv"
+        app:layout_constraintTop_toBottomOf="@id/question_tv"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/white">
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/value_sb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:thumbTint="@color/blue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/value_tv"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/value_tv"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:maxLength="3"
+            android:gravity="center"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:textColor="@color/skinny_gray"
+            android:fontFamily="@font/acme_regular"
+            android:background="@drawable/btn_bg_outline"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

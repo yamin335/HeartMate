@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.auth.primerx.PrimerXFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/primer_x_title"
+        android:textSize="@dimen/_18ssp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_24sdp"
+        android:layout_marginEnd="@dimen/_24sdp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/sub_title_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_light"
+        android:text="@string/primer_x_sub_title"
+        android:textSize="@dimen/_18ssp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/title_tv"
+        app:layout_constraintTop_toBottomOf="@id/title_tv"
+        app:layout_constraintEnd_toEndOf="@id/title_tv"
+        android:layout_marginTop="@dimen/_24sdp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/back_btn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_34sdp"
+        android:background="@drawable/btn_round_corner_bg"
+        android:backgroundTint="@color/mild_sky"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/back"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="@+id/sub_title_tv"
+        app:layout_constraintStart_toStartOf="@+id/sub_title_tv"
+        app:layout_constraintTop_toBottomOf="@+id/sub_title_tv"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:visibility="gone"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/prime_x_btn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_34sdp"
+        android:background="@drawable/btn_round_corner_bg"
+        android:backgroundTint="@color/mild_sky"
+        android:fontFamily="@font/inter_bold"
+        android:text="@string/primer_v_sub_title"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="@+id/sub_title_tv"
+        app:layout_constraintStart_toStartOf="@+id/sub_title_tv"
+        app:layout_constraintTop_toBottomOf="@+id/sub_title_tv"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:visibility="visible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

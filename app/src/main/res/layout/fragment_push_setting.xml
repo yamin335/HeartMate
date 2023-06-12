@@ -1,0 +1,213 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/_10sdp"
+    android:paddingEnd="@dimen/_10sdp"
+    tools:context=".ui.dashboard.setting.PushSettingFragment">
+
+    <include
+        android:id="@+id/top_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/app_top_bar" />
+
+    <View
+        android:id="@+id/line_separator_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        app:layout_constraintBottom_toBottomOf="@+id/top_bar_layout" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/all_notification_switch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/allow_notifications"
+        android:textSize="@dimen/_14ssp"
+        android:fontFamily="@font/inter_normal"
+        android:paddingTop="@dimen/_12sdp"
+        app:trackTint="@drawable/switch_filter_track_selector"
+        app:thumbTint="@drawable/switch_filter_thumb_selector"
+        android:checked="true"
+        android:textColor="@color/black"
+        android:paddingBottom="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/top_bar_layout"
+        app:layout_constraintTop_toBottomOf="@+id/line_separator_1" />
+
+    <View
+        android:id="@+id/line_separator_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        app:layout_constraintBottom_toBottomOf="@+id/all_notification_switch" />
+
+    <View
+        android:id="@+id/line_separator_3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_marginTop="@dimen/_40sdp"
+        app:layout_constraintTop_toBottomOf="@id/line_separator_2"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/discovery_switch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/push_new_discovery"
+        android:textSize="@dimen/_12ssp"
+        app:trackTint="@drawable/switch_filter_track_selector"
+        app:thumbTint="@drawable/switch_filter_thumb_selector"
+        android:checked="true"
+        android:textColor="@color/black"
+        android:fontFamily="@font/inter_normal"
+        android:paddingTop="@dimen/_12sdp"
+        android:paddingBottom="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/top_bar_layout"
+        app:layout_constraintTop_toBottomOf="@+id/line_separator_3" />
+
+    <View
+        android:id="@+id/line_separator_4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        app:layout_constraintTop_toBottomOf="@id/discovery_switch"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/invitation_switch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/push_new_invitation"
+        android:textSize="@dimen/_12ssp"
+        app:trackTint="@drawable/switch_filter_track_selector"
+        app:thumbTint="@drawable/switch_filter_thumb_selector"
+        android:checked="true"
+        android:fontFamily="@font/inter_normal"
+        android:paddingTop="@dimen/_12sdp"
+        android:textColor="@color/black"
+        android:paddingBottom="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/top_bar_layout"
+        app:layout_constraintTop_toBottomOf="@+id/line_separator_4" />
+
+    <View
+        android:id="@+id/line_separator_5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        app:layout_constraintTop_toBottomOf="@id/invitation_switch"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/memory_switch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/daily_mood_ring"
+        android:textSize="@dimen/_12ssp"
+        android:fontFamily="@font/inter_normal"
+        android:paddingTop="@dimen/_12sdp"
+        android:textColor="@color/black"
+        app:trackTint="@drawable/switch_filter_track_selector"
+        app:thumbTint="@drawable/switch_filter_thumb_selector"
+        android:checked="true"
+        android:paddingBottom="@dimen/_12sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/top_bar_layout"
+        app:layout_constraintTop_toBottomOf="@+id/line_separator_5" />
+
+    <View
+        android:id="@+id/line_separator_6"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        app:layout_constraintTop_toBottomOf="@id/memory_switch"/>
+
+    <TextView
+        android:id="@+id/promotion_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_normal"
+        android:paddingTop="@dimen/_12sdp"
+        android:text="@string/push_promotion"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line_separator_6" />
+
+    <TextView
+        android:id="@+id/promotion_subtitle_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_light"
+        android:paddingBottom="@dimen/_12ssp"
+        android:text="@string/push_exclusive_offers_news"
+        android:textSize="@dimen/_10ssp"
+        android:textColor="@color/light_gray"
+        app:layout_constraintTop_toBottomOf="@+id/promotion_tv"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/line_separator_7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        app:layout_constraintTop_toBottomOf="@id/promotion_subtitle_tv"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/promotion_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:trackTint="@drawable/switch_filter_track_selector"
+        app:thumbTint="@drawable/switch_filter_thumb_selector"
+        android:checked="true"
+        android:fontFamily="@font/inter_normal"
+        app:layout_constraintBottom_toBottomOf="@+id/promotion_subtitle_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/promotion_tv" />
+
+    <TextView
+        android:id="@+id/announcement_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_normal"
+        android:paddingTop="@dimen/_12sdp"
+        android:text="@string/push_announcement"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/promotion_subtitle_tv" />
+
+    <TextView
+        android:id="@+id/announcement_subtitle_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_light"
+        android:paddingBottom="@dimen/_12ssp"
+        android:text="@string/push_announcement_sub_title"
+        android:textSize="@dimen/_10ssp"
+        android:textColor="@color/light_gray"
+        app:layout_constraintTop_toBottomOf="@+id/announcement_tv"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/announcement_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:trackTint="@drawable/switch_filter_track_selector"
+        app:thumbTint="@drawable/switch_filter_thumb_selector"
+        android:checked="true"
+        android:fontFamily="@font/inter_normal"
+        app:layout_constraintBottom_toBottomOf="@+id/announcement_subtitle_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/announcement_tv" />
+
+    <View
+        android:id="@+id/line_separator_8"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        app:layout_constraintTop_toBottomOf="@id/announcement_subtitle_tv"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

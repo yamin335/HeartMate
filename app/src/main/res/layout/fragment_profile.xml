@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/round_border_top_right_left"
+    android:elevation="@dimen/_6sdp"
+    android:fillViewport="true"
+    tools:context=".ui.dashboard.profile.ProfileFragment">
+
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:padding="@dimen/_4ssp"
+            android:id="@+id/datingPrefNav"
+            app:srcCompat="@drawable/ic_home_24" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_toLeftOf="@+id/settingsNav"
+            android:padding="@dimen/_4ssp"
+            android:id="@+id/dateNightCateloge"
+            app:srcCompat="@drawable/ic_dating_catalog" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/settingsNav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:padding="@dimen/_4ssp"
+            app:srcCompat="@drawable/ic_setting" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/ScrollViewLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBar">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/profileUpdateSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/topBar">
+
+                <RelativeLayout
+                    android:id="@+id/UserImageNav"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_85sdp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/white_circle">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile_img"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_75sdp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_default_placeholder" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-10dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/inter_medium"
+                    android:singleLine="true"
+                    tools:text="Jermon"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15ssp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:id="@+id/updateMyProfile"
+                    android:background="@drawable/btn_round_corner_bg"
+                    android:backgroundTint="@color/gray"
+                    android:fontFamily="@font/inter_medium"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:text="@string/update_my_profile"
+                    android:textAllCaps="false"
+                    android:textColor="@color/gray_text_color"
+                    android:textSize="@dimen/_10sdp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/myProfileStats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_17sdp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profileUpdateSection">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/numberOfExperience"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-10dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/inter_bold"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:textColor="@color/circle_stroke"
+                        android:textSize="@dimen/_20ssp"
+                        tools:text="66" />
+
+
+                    <TextView
+                        android:id="@+id/numberOfExperienceLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/numberOfExperience"
+                        android:layout_centerInParent="true"
+                        android:ems="4"
+                        android:fontFamily="@font/inter_light"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10ssp"
+                        tools:text="experiences to value me" />
+
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/vertical_divider_color" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/activeDatingJourney"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="-10dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/inter_bold"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:textColor="@color/circle_stroke"
+                        android:textSize="@dimen/_20ssp"
+                        tools:text="0" />
+
+
+                    <TextView
+                        android:id="@+id/activeDatingJourneyLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/activeDatingJourney"
+                        android:layout_centerInParent="true"
+                        android:ems="4"
+                        android:fontFamily="@font/inter_light"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10ssp"
+                        tools:text="active dating journeys" />
+
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_alignParentRight="true"
+                        android:background="@color/vertical_divider_color" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/receivedObservations"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="-10dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/inter_bold"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:textColor="@color/circle_stroke"
+                        android:textSize="@dimen/_20ssp"
+                        tools:text="0" />
+
+
+                    <TextView
+                        android:id="@+id/receivedObservationsLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/receivedObservations"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/inter_light"
+                        android:gravity="center"
+                        android:ems="5"
+                        tools:text="received observations"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10ssp" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutSeeWhoUpsTodays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:background="@drawable/who_sees_today"
+                android:elevation="@dimen/_6sdp"
+                android:orientation="horizontal"
+                android:padding="@dimen/_14ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/myProfileStats">
+
+                <TextView
+                    android:id="@+id/dailyStatusLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.4"
+                    android:fontFamily="@font/inter_normal"
+                    android:text="@string/see_who_shows_up_for_you_today"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/dailyStatusButtonLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="end"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/btn_round_corner_bg"
+                    android:backgroundTint="@color/white"
+                    android:fontFamily="@font/inter_normal"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingEnd="@dimen/_10sdp"
+                    android:text="@string/update_my_mood_ring"
+                    android:textAllCaps="false"
+                    android:textColor="@color/circle_stroke"
+                    android:textSize="@dimen/_11sdp" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutWhatWorks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutSeeWhoUpsTodays">
+
+                <TextView
+                    android:id="@+id/whatWorksLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="@string/what_works"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18ssp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/icon_help"
+                    android:layout_width="wrap_content"
+                    android:paddingTop="@dimen/_2sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    app:srcCompat="@drawable/ic_help" />
+
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/banner_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_170sdp"
+                    android:layout_below="@+id/whatWorksLabel"
+                    android:layout_marginTop="@dimen/_11sdp"
+                    android:elevation="10dp"
+                    android:overScrollMode="never" />
+
+
+
+            </RelativeLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginHorizontal="@dimen/_18sdp">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/inter_medium"
+                        android:text="Relationship Goals"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_18ssp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnManageMine"
+                        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/_26sdp"
+                        android:backgroundTint="@color/communal_start"
+                        android:fontFamily="@font/inter_normal"
+                        android:text="Manage Mine"
+                        android:paddingHorizontal="@dimen/_8sdp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11ssp"
+                        app:cornerRadius="@dimen/_4sdp"
+                        app:rippleColor="@color/white"
+                        android:insetTop="0dp"
+                        android:insetBottom="0dp"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/btnGift"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/linearLayout3"
+                    app:srcCompat="@drawable/heart_balloon" />
+
+                <TextView
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_medium"
+                    android:text="Give the Gift of a \nMemorable Experience"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                    app:layout_constraintVertical_bias="0.65" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutRhythmOfLife"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/rhythmOfLifeLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/inter_medium"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18ssp"
+                    android:text="@string/the_rhythm_of_my_life" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="@dimen/_150sdp"
+                    android:id="@+id/containerRhythmOfLife"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+
+                    <ImageView
+                        android:id="@+id/imageRhythmOfLife"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/_10sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <TextView
+                            android:id="@+id/inventoryOfMyLifeLabel"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_18sdp"
+                            android:fontFamily="@font/inter_medium"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp"
+                            tools:text="Update Inventory of My Life" />
+
+                        <TextView
+                            android:id="@+id/lastUpdatedRhythmOfLife"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_18sdp"
+                            android:fontFamily="@font/inter_medium"
+                            android:textColor="@color/dark_gray_profile"
+                            android:textSize="@dimen/_9ssp"
+                            tools:text="Last Updated Oct 2" />
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/layoutIceBreaker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutRhythmOfLife">
+
+                <TextView
+                    android:id="@+id/iceBreakerLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/inter_medium"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_18ssp"
+                    android:text="@string/icebreakers_for_new_matches" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:id="@+id/containerIceBreaker"
+                    android:minHeight="@dimen/_150sdp">
+
+
+                    <ImageView
+                        android:id="@+id/imageIceBreaker"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/_10sdp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <TextView
+                            android:id="@+id/iceBreakerHaveRightQuestion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_18sdp"
+                            android:fontFamily="@font/inter_medium"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_12ssp"
+                            tools:text="Always have the right questions" />
+
+                        <TextView
+                            android:id="@+id/iceBreakerEasilyFind"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_18sdp"
+                            android:fontFamily="@font/inter_medium"
+                            android:textColor="@color/light_gray_profile"
+                            android:textSize="@dimen/_9ssp"
+                            tools:text="Easily find the right person" />
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

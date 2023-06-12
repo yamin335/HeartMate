@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.auth.primerone.BirthdayFragment">
+
+    <ImageView
+        android:id="@+id/active_dot_img"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:contentDescription="@string/primer_one_first_name"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_ring"
+        app:layout_constraintBottom_toBottomOf="@+id/page_img"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/black" />
+
+    <ImageView
+        android:id="@+id/page_img"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:scaleType="centerCrop"
+        android:padding="6dp"
+        android:src="@drawable/ic_birthday"
+        android:layout_marginTop="@dimen/_12sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/primer_one_first_name"
+        app:layout_constraintStart_toEndOf="@id/active_dot_img" />
+
+    <ImageView
+        android:id="@+id/dots_img"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_dots_indicator"
+        app:layout_constraintBottom_toBottomOf="@+id/page_img"
+        app:layout_constraintEnd_toEndOf="@+id/title_tv"
+        app:layout_constraintStart_toEndOf="@+id/page_img"
+        android:layout_marginStart="@dimen/_8sdp"
+        app:layout_constraintTop_toTopOf="@+id/page_img"
+        android:contentDescription="@string/primer_one_first_name"/>
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/acme_regular"
+        android:text="@string/primer_one_birthday_title"
+        android:textSize="@dimen/_24ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/page_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_30sdp"/>
+
+    <DatePicker
+        android:id="@+id/date_picker"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        android:calendarTextColor="@color/black"
+        android:headerBackground="@color/black"
+        android:startYear="1970"
+        android:endYear="2022"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@id/title_tv"/>
+
+    <TextView
+        android:id="@+id/age_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/inter_bold"
+        android:gravity="center"
+        android:text="@string/primer_one_birthday_age"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/date_picker" />
+
+    <TextView
+        android:id="@+id/age_alert_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_medium"
+        android:gravity="center"
+        android:textColor="@color/very_light_grey"
+        android:text="@string/primer_one_age_alert"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/age_tv"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/next_img"
+        android:layout_width="@dimen/_32sdp"
+        android:layout_height="@dimen/_32sdp"
+        android:background="@drawable/btn_selector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="@string/phone_verification"
+        android:layout_margin="@dimen/_20sdp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

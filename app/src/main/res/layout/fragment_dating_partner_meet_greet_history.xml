@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main"
+        android:paddingBottom="@dimen/_20sdp"
+        tools:context=".ui.dashboard.favorite.LevelOneInvitationFragment">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_12sdp"
+            android:fontFamily="@font/acme_regular"
+            android:gravity="start"
+            android:text="@string/meet_greet_history_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_25sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/sub_title_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_14sdp"
+            android:fontFamily="@font/inter_normal"
+            android:gravity="start"
+            android:lineSpacingExtra="0.5dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toTopOf="@+id/list_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_tv" />
+
+        <FrameLayout
+            android:id="@+id/list_layout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="@dimen/_12sdp"
+            android:elevation="8dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/sub_title_tv">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/history_rv"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:layout_alignParentBottom="true"
+                tools:listitem="@layout/item_meet_greet_history"
+                tools:itemCount="3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/no_testimonial_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginHorizontal="@dimen/_12sdp"
+                android:fontFamily="@font/inter_normal"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textColor="@color/dark_gray_profile"
+                android:layout_gravity="center_vertical"
+                android:text="No Testimonial So Far"
+                android:textSize="@dimen/_18ssp" />
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_4sdp"
+    tools:context="com.tovalue.me.ui.dashboard.manageInvitation.InvitationHistoryAdapter">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/phone_number_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:fontFamily="@font/inter_light"
+        android:text="333-444-55555"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/separator"
+        app:layout_constraintEnd_toStartOf="@+id/days_count_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/days_count_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_light"
+        android:text="24"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/phone_number_tv"
+        app:layout_constraintEnd_toStartOf="@+id/delete_btn_container"
+        app:layout_constraintStart_toEndOf="@+id/phone_number_tv"
+        app:layout_constraintTop_toTopOf="@+id/phone_number_tv" />
+
+    <FrameLayout
+        android:id="@+id/delete_btn_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/phone_number_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/days_count_tv"
+        app:layout_constraintTop_toTopOf="@+id/phone_number_tv">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/delete_invitation_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="end"
+            android:background="@drawable/btn_blue_round_corner_bg"
+            android:text="@string/delete"
+            android:textColor="@color/white" />
+    </FrameLayout>
+
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="0dp"
+        android:layout_height=".5dp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@color/light_grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/delete_btn_container"
+        app:layout_constraintStart_toStartOf="@+id/phone_number_tv"
+        app:layout_constraintTop_toBottomOf="@+id/phone_number_tv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

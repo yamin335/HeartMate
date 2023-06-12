@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".ui.dashboard.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:text="@string/homeScreenTitle"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.yarolegovich.discretescrollview.DiscreteScrollView
+        android:id="@+id/dataCardSV"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/noDatingJourneyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B2000000"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardBackgroundColor="@color/main"
+            app:cardUseCompatPadding="false"
+            app:contentPadding="0dp"
+            app:cardCornerRadius="23dp"
+            android:layout_margin="16dp"
+            app:cardElevation="10dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/linearTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:layout_width="@dimen/_29sdp"
+                        android:layout_height="@dimen/_29sdp"
+                        android:layout_marginTop="26dp"
+                        app:srcCompat="@drawable/ic_main" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:fontFamily="@font/acme_regular"
+                        android:text="@string/app_tag_line"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16ssp" />
+
+                    <TextView
+                        android:id="@+id/titleText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:fontFamily="@font/acme_regular"
+                        android:gravity="center"
+                        android:text="Welcome To Your \nDating Journey Home"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_24ssp" />
+                </LinearLayout>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginBottom="14dp"
+                    app:cardUseCompatPadding="false"
+                    app:contentPadding="14dp"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="4dp"
+                    app:layout_constraintBottom_toTopOf="@+id/btnInvite"
+                    app:layout_constraintTop_toBottomOf="@+id/linearTop"
+                    app:layout_constraintVertical_bias="1.0">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/headText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/inter_bold"
+                            android:gravity="center"
+                            android:text="Create and Track To Value Me Journey Progress"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_13ssp" />
+
+                        <LinearLayout
+                            android:id="@+id/bullet1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="top"
+                            android:layout_marginTop="18dp">
+                            <ImageView
+                                android:layout_width="@dimen/_5sdp"
+                                android:layout_height="@dimen/_5sdp"
+                                android:src="@drawable/circle_black_solid_bg"
+                                android:layout_marginTop="@dimen/_8sdp"/>
+                            <TextView
+                                android:id="@+id/tvBullet1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_light"
+                                android:gravity="start"
+                                android:text="Always know your status"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_15ssp"
+                                android:layout_marginStart="10dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/bullet2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="top"
+                            android:layout_marginTop="14dp">
+                            <ImageView
+                                android:layout_width="@dimen/_5sdp"
+                                android:layout_height="@dimen/_5sdp"
+                                android:src="@drawable/circle_black_solid_bg"
+                                android:layout_marginTop="@dimen/_8sdp"/>
+                            <TextView
+                                android:id="@+id/tvBullet2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_light"
+                                android:gravity="start"
+                                android:text="Always know what the goal of your To Value Me journey is"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_15ssp"
+                                android:layout_marginStart="10dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/bullet3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="top"
+                            android:layout_marginTop="14dp">
+                            <ImageView
+                                android:layout_width="@dimen/_5sdp"
+                                android:layout_height="@dimen/_5sdp"
+                                android:src="@drawable/circle_black_solid_bg"
+                                android:layout_marginTop="@dimen/_8sdp"/>
+                            <TextView
+                                android:id="@+id/tvBullet3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_light"
+                                android:gravity="start"
+                                android:text="Always know how attentive you are to one another"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_15ssp"
+                                android:layout_marginStart="10dp"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/bullet4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="top"
+                            android:layout_marginTop="14dp">
+                            <ImageView
+                                android:layout_width="@dimen/_5sdp"
+                                android:layout_height="@dimen/_5sdp"
+                                android:src="@drawable/circle_black_solid_bg"
+                                android:layout_marginTop="@dimen/_8sdp"/>
+                            <TextView
+                                android:id="@+id/tvBullet4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/inter_light"
+                                android:gravity="start"
+                                android:text="Always know how much further you both have until the exclusivity begins"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_15ssp"
+                                android:layout_marginStart="10dp"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnInvite"
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:fontFamily="@font/inter_bold"
+                    android:layout_marginHorizontal="15dp"
+                    android:text="Invite Someone To Value Me"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15ssp"
+                    android:textAllCaps="false"
+                    app:rippleColor="@color/white"
+                    app:cornerRadius="@dimen/_20sdp"
+                    android:backgroundTint="@color/yellow"
+                    android:layout_marginBottom="26dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
